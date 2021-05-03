@@ -1,0 +1,76 @@
+@import "./media-queries.scss";
+.text{
+  font-family: var(--font-family-p);
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 3rem;  
+  max-width: 43.5rem;
+}
+.text-expertise{
+  color: var(--text-secondary);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.text-portfolio{
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+.btn-primary{
+  display: block;
+  padding: 1rem 2rem;
+  color: var(--white);
+  border: 0.1rem solid var(--orange);
+  background: var(--orange);
+  border-radius: 0.5rem;
+  max-width: 30rem;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+.underline{
+  width: 25.8rem;
+  height: 0.3rem;
+  background: var(--orange);
+  margin: 3rem 0;
+}
+.titre{
+  color: var(--gray);
+  font-size: 7.2rem;
+  font-weight: 800;
+  text-align: center;
+  @include xs{
+    font-size: 4rem;
+  }  
+}
+.titre-newsletter{
+  color: var(--white);
+  font-weight: 800;
+  font-size: 5.8rem;
+  text-align: center;
+  @include xs{
+    font-size: 4rem;
+  }
+}
+.titre-secondary{
+  font-size: 3.6rem;
+  font-family: var(--font-family-titre);
+  margin: 0;
+  margin: 2rem 0;
+  @include xs{
+    font-size: 2.4rem;
+  }
+}
+.active{
+  background: var(--blue);
+  a{
+    color: var(--white);
+  }
+}
+.quote::before{
+  content: "\201C";
+  color: var(--orange);
+  font-size: 2rem;
+}
