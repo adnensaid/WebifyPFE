@@ -3,70 +3,61 @@ body{
   font-size: 1.6rem;
 }
 .container{
-  max-width: 100rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .vp{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   background: url(./assets/images/bg-1.png) no-repeat;
   background-size: cover;
-  background-position: 60rem -80rem;
-  @include xs{
+  background-position: 45vw -125vh;
+  @include md{
     padding: 0 1rem;
+    background-position: 45vw -41vh;
     min-height: auto;
   }
   .vp-content{
-    flex: auto;
     display: flex;
     flex-direction: column;
-    margin: 0 4rem;
-    @include xs{
-      margin: 0;
-    }
     .header{
       display: flex;
       flex-flow: row nowrap;
-      margin: 4rem 0 12rem 0;
-      @include xs{
-        flex-direction: column;
-        margin: 0;
+      justify-content: space-between;
+      padding: 5rem 0;
+      line-height: 4rem;
+      @include md{
+        line-height: 3rem;
+        padding: 3rem 0;
       }
       .logo{
-        flex: 1;
-        @include xs{
-          margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        img{
+          max-width: 100%;
+          @include md{
+            max-width: 80%;
+            max-height: 3rem;
+          }  
         }
+
       }
       ul{
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-        line-height: 1.6rem;
-        @include xs{
-          flex-direction: column;
-          align-items: flex-start;
-          background: var(--gray);
-        }
+        justify-content: space-between;
         li{
-          margin: 0 1rem;
-          display: flex;
-          align-items: center;
-          @include xs{
-            padding: 0.5rem 0;
-            &:nth-child(1){
-              background: none;
-              border: none;
-            }
+          padding: 0 1rem;
+          @include md{
+            padding: 0 0.5rem;
           }
           a{
-            font-weight: 800;
             color: var(--white);
+            font-weight: 800;
             font-size: 1.6rem;
-            @include xs{
-              color: var(--text);
-              font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            @include md{
+              font-size: 1.1rem;
             }
           }
         }
@@ -74,82 +65,75 @@ body{
     }
     .banner{
       flex: 1;
+      margin: 5rem 0;
+      @include md{
+        margin: 3rem 0;
+      }
       h1{
         font-weight: 600;
         font-size: 3rem;
         letter-spacing: 0.2rem;
         color: var(--text-primary);
         line-height: 3.4rem;
-        @include xs{
-          font-size: 2rem;
-        }
-      }
-      .text{
-        letter-spacing: 0.1rem;
-        font-size: 2.4rem;
-        @include xs{
-          font-size: 1.6rem;
-        }
-      }
-      .details{
-        a{
-          margin-top: 3rem;
+        @include md{
           font-size: 2.4rem;
-          line-height: 2.4rem;
-          font-weight: 500;
-          color: var(--white);
-          @include xs{
-            font-size: 2rem;
-          }
-        }    
-      }
-    }  
+          line-height: 3rem;
+        }
+      }  
+    }
   }
 }
 .expertises{
   background-color: var(--gray-light);
   padding: 3rem 0 1rem 0;
-  @include xs{
-    padding: 0 1rem;
+  margin: 2rem 0;
+  @include md{
+    padding: 2rem;
   }
   .expertises-content{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: auto ;
-    justify-items: center;
     column-gap: 1.4rem;
     row-gap: 6rem;
     margin: 3rem 0;
-    @include xs{
-      display: flex;
-      flex-direction: column;
+    @include md{
+      margin: 2rem 0;
+      row-gap: 3rem;
     }
     .expertise-elem{
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr auto;
-      width: 100%;
-      justify-items: center;
       align-items: center;
+      justify-items: center;  
       background: var(--white);
       padding: 1rem;
       border: 0.1rem solid var(--white);
       border-radius: 5rem;
-      p{
+      .text-expertise{
         color: var(--text-secondary);
-      }
+        padding: 1rem 0;
+        @include md{
+          font-size: 1rem;
+        }
+      }  
     }
     .details{
       grid-row: 2 / 3;
       grid-column: 1 / 6;
-      align-self: center;
-    }
+      justify-self: center;
+    }  
+
   }  
 }
 .services{
   margin: 3rem 0;
   @include xs{
-    margin: 0;
+    padding: 0 1rem;
+  }
+  @include md{
+    padding: 0 1rem;
   }
   .services-content{
     margin: 7rem 0;
@@ -170,6 +154,9 @@ body{
 }
 .portfolio{
   margin: 3rem 0;
+  @include md{
+    padding: 0 1rem;
+  }
   .portfolio-content{
     margin-bottom: 7rem;
     display: flex;
@@ -188,6 +175,12 @@ body{
       li{
         padding: 1rem 2rem;
         cursor: pointer;
+        a{
+          font-size: 2.4rem;
+          @include md{
+            font-size: 1.8rem;
+          }
+        }
         &:first-child{
           background: var(--blue);
           border-top-left-radius: 0.5rem;
@@ -265,6 +258,10 @@ body{
     padding: 0 1rem;
     margin: 0;
   }
+  @include md{
+    padding: 0 1rem;
+    margin: 0;    
+  }
   .avis-list{
     margin: 6rem 0;
     display: flex;
@@ -286,9 +283,34 @@ body{
       @include xs{
         margin: 1rem 0;
       }
+      @include md{
+        max-width: 24rem;
+      }
       .avis-elem-text{
         flex: 0 0 1;
         font-size: 1.2rem;
+        position: relative;
+        .quote{
+          width: 4rem;
+          height: 2rem;
+          display: inline-block;
+          text-align: center;
+          position: relative;
+          //background-color: red;
+          &::before{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            //background: green;
+            left: -2rem;
+            top: -3.4rem;
+            content: "\201C";
+            color: var(--orange);
+            font-size: 8rem;    
+          }
+        }
       }
       .avis-elem-profil{
         flex: 0 0 5rem;
@@ -319,12 +341,13 @@ body{
   background: url(./assets/images/bg.png) no-repeat;
   background-size: cover;
   position: relative;
+  min-height: 40rem;
   .newsletter-content{
+    position: relative;
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    align-items: center;  
     .btn-newsletter{
       width: 6rem;
       height: 6rem;
@@ -346,7 +369,7 @@ body{
         transform: rotate(-45deg);  
         margin-top: 2.5rem;    
       }
-    }
+    }   
     .text-secondary{
       text-align: center;
       color: var(--white);
@@ -357,55 +380,50 @@ body{
       }
     }
     form{
-     min-width: 67rem; 
-     padding: 2rem 0 10rem 0;
-     position: relative;
-     @include xs{
-       min-width: 30rem;
-     }
-     input{
-       position: absolute;
-       width: 80%;
-       padding: 2rem 1rem;
-       border: 0;
-       border-radius: 5rem;
-       z-index: 1;
-       font-size: 3rem;
-       outline: 0;
-       &::placeholder{
-         padding: 0 2rem;
-         font-size: 2.4rem;
-       }
-       @include xs{
-         padding: 1rem;
-         font-size: 1.6rem;
-         &::placeholder{
-          padding: 0;
-          font-size: 1rem;
+      background: var(--orange);
+      border-radius: 5rem;
+      margin: 2rem 0;  
+      input{
+        padding: 2rem 1rem;
+        border: 0;
+        border-radius: 5rem;
+        font-size: 3rem;
+        outline: 0;
+        min-width: 50rem;
+        @include xs{
+          min-width: 30rem;
         }  
-       }
-
-     } 
-     button{
-       position: absolute;
-       width: 100%;
-       border: 0;
-       border-radius: 5rem;
-       padding: 2rem;
-       background: var(--orange);
-       color: var(--white);
-       font-weight: 700;
-       z-index: 0;
-       text-align: end;
-       padding-right: 10%;
-       font-size: 3rem;
-       cursor: pointer;
-       @include xs{
-         padding: 1rem;
-         font-size: 1.6rem;
-       }
-     }     
-    }    
+        &::placeholder{
+          padding: 0 2rem;
+          font-size: 2.2rem;
+          @include md{
+            font-size: 1.6rem;
+          }
+        }  
+        @include xs{
+          padding: 1rem;
+          font-size: 1.6rem;
+          &::placeholder{
+           padding: 0;
+           font-size: 1rem;
+         }
+        }
+      }
+      button{
+        border: 0;
+        padding: 2rem;
+        background: var(--orange);
+        border-radius: 5rem;
+        color: var(--white);
+        font-weight: 700;
+        font-size: 3rem;
+        cursor: pointer;
+        @include xs{
+          padding: 1rem;
+          font-size: 1.6rem;
+        }
+      }  
+    }         
   }
 }
 footer{
@@ -415,21 +433,37 @@ footer{
   align-items: center;
   padding: 0 3rem;
   line-height: 3rem;
+  @include xs{
+    padding: 0;
+    flex-direction: column;
+  }
   ul{
     display: flex;
     flex-flow: row nowrap;
     li{
       padding: 2rem;
+      @include xs{
+        padding: 0.5rem;
+      }
       a{
         font-size: 1.6rem;
         font-weight: 800;
         color: var(--blue);
+        @include md{
+          font-size: 1.2rem;
+        }
+        @include xs{
+          font-size: 1.2rem;
+        }
       }
     }
   }
   p{
     font-size: 1.6rem;
     font-weight: 800;
-    color: var(--blue);    
+    color: var(--blue); 
+    @include xs{
+      font-size: 1.4rem;
+    }   
   }
 }

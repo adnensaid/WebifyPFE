@@ -6,6 +6,13 @@
   color: var(--text-primary);
   line-height: 3rem;  
   max-width: 43.5rem;
+  @include xs{
+    font-size: 1.6rem;
+  }  
+  @include md{
+    font-size: 1.8rem;
+    max-width: 35rem;
+  }
 }
 .text-expertise{
   color: var(--text-secondary);
@@ -17,18 +24,28 @@
   font-weight: 500;
   font-size: 2.4rem;
 }
-.btn-primary{
-  display: block;
+.btn{
+  display: inline-block;
   padding: 1rem 2rem;
-  color: var(--white);
-  border: 0.1rem solid var(--orange);
-  background: var(--orange);
   border-radius: 0.5rem;
-  max-width: 30rem;
   text-align: center;
-  margin: 1rem 0;
-  font-size: 1.6rem;
-  line-height: 1.6rem;
+  margin: 2rem 0;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  font-weight: 500;  
+  &-primary{
+    color: var(--white);
+    border: 0.1rem solid var(--orange);
+    background: var(--orange);
+    max-width: 30rem;
+    @include md{
+      max-width: 20rem;
+    }
+  }
+  @include md{
+    font-size: 1.6rem;
+    padding: 0.6rem 1.6rem;
+  }
 }
 .underline{
   width: 25.8rem;
@@ -44,6 +61,9 @@
   @include xs{
     font-size: 4rem;
   }  
+  @include md{
+    font-size: 5.2rem;
+  }
 }
 .titre-newsletter{
   color: var(--white);
@@ -62,15 +82,36 @@
   @include xs{
     font-size: 2.4rem;
   }
+  @include md{
+    font-size: 3rem;
+    margin: 1rem 0;
+  }  
 }
 .active{
-  background: var(--blue);
+  background: var(--orange);
+  border-radius: 0.5rem;
   a{
     color: var(--white);
   }
 }
-.quote::before{
-  content: "\201C";
-  color: var(--orange);
-  font-size: 2rem;
+
+.expertise-animation{
+  opacity: 0;
+/*   .expertise-elem{
+    &:nth-child(1){
+      animation: expertise-animation 0.2s ease forwards;
+    }
+    &:nth-child(2){
+      animation: expertise-animation 0.2s ease forwards 0.2s;
+    }  
+    &:nth-child(3){
+      animation: expertise-animation 0.2s ease forwards 0.4s;
+    }      
+    &:nth-child(4){
+      animation: expertise-animation 0.2s ease forwards 0.6s;
+    }
+    &:nth-child(5){
+      animation: expertise-animation 0.2s ease forwards 0.8s;
+    }     
+  }  */  
 }
