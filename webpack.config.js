@@ -56,6 +56,6 @@ module.exports = {
     open: false,
     contentBase: "./dist",
     inline: true,
-    port: 4000
+    port: 5500
   }
 };
