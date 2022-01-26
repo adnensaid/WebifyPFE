@@ -1,0 +1,13 @@
+.direction{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1 / 2;
+  margin: 4rem 0;
+}
+button{
+  border: 0;
+  display: flex;
+  background: none;
+  justify-content: flex-end;
+}

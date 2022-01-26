@@ -1,0 +1,140 @@
+@import '../../../../assets/styles/media-queries';
+.contact{
+  //min-height: 100vh;
+  font-family: 'robotoregular';
+  margin-bottom: 11.5rem;
+  .titre{
+    @include md{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include sm{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include xs{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .contactContent{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    @include md{
+      flex-direction: column;
+      align-items: center;
+    }
+    @include sm{
+      flex-direction: column;
+      align-items: center;
+    }
+    @include xs{
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .contactForm{
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      @include xs{
+        align-items: center;
+      }
+      p{
+        max-width: 52rem;
+        @include xs{
+          text-align: center;
+        }
+      } 
+      form{
+        margin-top: 4rem;
+        input, textarea{
+          padding:2rem 0 2rem 2rem;
+          max-width: 48rem;
+          background: var(--gray);
+          border: .1rem solid var(--gray);
+          font-size: 2rem;
+          &::placeholder{
+            color: #777676;
+          }
+        }
+        input{
+          border-radius: 30rem;
+        }
+        textarea{
+          border-radius: 5rem;
+        }
+      }  
+
+    }
+    .contactCordinate{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include md{
+        order: -1;
+      }
+      @include sm{
+        order: -1;
+      }
+      @include xs{
+        order: -1;
+      }
+      .contactCordinateText{
+        display: flex;
+        flex-direction: column;
+        @include md{
+          align-items: center;
+        }
+        .contactCordinateTextElem{
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          margin-bottom: 2rem;
+          @include md{
+            flex-direction: column;
+            p{
+              margin-top: 1rem;
+              text-align: center;
+            }
+          }
+          @include sm{
+            flex-direction: column;
+            p{
+              margin-top: 1rem;
+              text-align: center;
+            }
+          }
+          @include xs{
+            flex-direction: column;
+            p{
+              margin-top: 1rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .socials{
+        align-self: flex-start;
+        display: flex;
+        flex-flow: row nowrap;
+        margin-left: 7rem;
+        .socialsElem{
+          border: .1rem solid var(--socials);
+          width: 6rem;
+          height: 6rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 2rem;
+          background: var(--socials);
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}

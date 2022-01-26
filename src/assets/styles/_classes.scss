@@ -1,0 +1,53 @@
+@import '../../assets/styles/media-queries';
+
+/* classes */
+.container{
+  max-width: 1035px !important;
+  margin: 0 auto;
+}
+.container-fluid{
+  max-width: 1220px !important;
+  margin: 0 auto;
+}
+
+
+
+
+/* .text-expertise{
+  color: var(--text-secondary);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.text-portfolio{
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 2.8rem;
+}
+
+.titre{
+  color: var(--gray-title);
+  font-size: 7.2rem;
+  text-align: center;
+  font-family: 'be_vietnamextrabold';
+
+  @include sm{
+    font-size: 6rem;
+  }
+  @include xs{
+    font-size: 3.6rem;
+  }
+}
+.titre-newsletter{
+  color: var(--white);
+  font-weight: 800;
+  font-size: 5.8rem;
+  text-align: center;
+}
+
+.text-center{
+  text-align: center;
+}
+
+
+
+ */

@@ -1,0 +1,86 @@
+@import "../../assets/styles/media-queries";
+.header{
+  padding: 5.1rem 0rem;
+  @include xl{
+    padding: 5.1rem 0rem;
+  }
+  @include l{
+    padding: 5.1rem 0rem;
+
+  }
+  @include md{
+    background: var(--light) !important;
+  }
+  @include sm{
+    background: var(--light) !important;
+  }
+  @include xs{
+    background: var(--light) !important;
+  }
+  @include xxs{
+    background: var(--light) !important;
+  }
+
+  .navlink{
+    font-family: 'be_vietnamextrabold';
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    padding: 1.4rem 1.8rem; 
+    text-decoration: none;
+    @include l{
+      font-size: 1.4rem;
+      padding: 1.1rem 1rem; 
+    }
+  }
+  @include md{
+    .navbarMenu{
+      margin-top: 4rem;
+    }
+    .navlink{
+      color: var(--text) !important;
+      text-align: center;
+    }
+  }
+  @include sm{
+    .navbarMenu{
+      margin-top: 4rem;
+    }
+    .navlink{
+      color: var(--text) !important;
+      text-align: center;
+    }
+  }
+  @include xs{
+    padding: 3.8rem 0rem;
+    .logo{
+      max-width: 80%;
+    }
+    .navbarMenu{
+      margin-top: 4rem;
+    }
+    .navlink{
+      color: var(--text) !important;
+      text-align: center;
+      font-size: 1.3rem;
+      padding: 1rem 1.8rem; 
+    }
+  }
+  @include xxs{
+    padding: 3.8rem 0rem;
+    .logo{
+      max-width: 80%;
+    }
+    .navbarMenu{
+      margin-top: 4rem;
+    }
+    .navlink{
+      color: var(--text) !important;
+      text-align: center;
+      font-size: 1.3rem;
+      padding: 1rem 1.8rem; 
+    }
+  }
+  
+}
+

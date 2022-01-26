@@ -1,0 +1,95 @@
+@import '../../../../assets/styles/media-queries';
+.newsletter{
+  background: url(../../../../assets/images/bg.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  @include xs{
+    background-position: center 0;
+  }
+  .newsletterContent{
+    position: relative;
+    padding: 5.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    .btnNewsletter{
+      width: 6rem;
+      height: 6rem;
+      border-radius: 100%;
+      background: var(--orange);
+      border: 0;
+      position: absolute;
+      top: -3rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      cursor: pointer;
+      &::before{
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        display: block;
+        position: relative;
+        background: linear-gradient(to bottom left, var(--white) 50%, var(--orange) 50%);
+        transform: rotate(-45deg);  
+        margin-top: 2.5rem;    
+      }
+    }   
+    .textSecondary{
+      text-align: center;
+      color: var(--white);
+      font-size: 2.9rem;
+      margin:2rem 0 0 0;
+      font-family: 'Bahnschrift';
+
+    }
+    .titreNewsletter{
+      color: var(--white);
+      font-weight: 800;
+      font-size: 4.8rem;
+      text-align: center;    
+      font-family: 'be_vietnamextrabold';
+
+
+    }
+    form{
+      background: var(--orange);
+      border-radius: 5rem;
+      margin: 2rem 0;  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .inputNewsletter{
+        padding: 2rem 1rem;
+        border: 0;
+        border-radius: 5rem;
+        outline: 0;
+        min-width: 50rem; 
+        font-size: 1.6rem;
+        @include xs{
+          min-width: 25rem;
+        }
+        &::placeholder{
+          padding:2rem;
+          margin: 0;
+          letter-spacing: 0.2rem;
+          font-family: 'Bahnschrift';
+          font-size: 1.4rem;
+        }  
+      }
+      .formBtn{
+        border: 0;
+        padding: 0rem 3.5rem;
+        background: var(--orange);
+        border-radius: 5rem;
+        color: var(--white);
+        font-weight: 700;
+        font-size: 2rem;
+        cursor: pointer;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }  
+    }         
+  }
+}
