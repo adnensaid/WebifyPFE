@@ -1,144 +1,42 @@
-@import '../../../../assets/styles/media-queries';
-.banner{
-  position: relative;
+.banner {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  @include md{
-    min-height: auto;
-    justify-content: start;
-    min-height: auto;
-    margin-top: 20rem;
-  }
-  @include sm{
-    min-height: auto;
-    justify-content: start;
-    min-height: auto;
-    margin-top: 18rem;
-  }
-  @include xs{
-    min-height: auto;
-    justify-content: start;
-    min-height: auto;
-    margin-top: 14rem;
-
-  }
-  @include xxs{
-    min-height: auto;
-    justify-content: start;
-    min-height: auto;
-    margin: 12rem 0 0rem 0;
-
-  }
-  .card{
-    @include md{
-      max-width: 50%;
-      margin: auto;
-      background: var(--light);
-      padding: 2rem;
-
+  padding-top: 25vh;
+  position: relative;
+  .card {
+    font-size: 1.6rem;
+    max-width: 28.75em;
+    border: 0;
+    .cardTitle {
+      font-size: 1.875em;
+      letter-spacing: 0.1em;
+      line-height: 1.3em;
+      margin: 0;
+      margin-bottom: 1.3333em;
     }
-    @include sm{
-      max-width: 75%;
-      margin: auto;
-      background: var(--light);
-      padding: 2rem;
+    .cardText {
+      font-size: 1.5em;
+      line-height: 1.2em;
+      margin: 0;
+      margin-bottom: 1.6666em;
     }
-    @include xxs{
-      padding-bottom: 2rem;
-    }
-  }
-  .cardTitle{
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
-    color: var(--text-primary);
-    line-height: 4.2rem;  
-    max-width: 40rem;
-    @include xs{
-      font-size: 2.8rem;
-      line-height: 4.8rem;
-      margin: 1rem 0 3.25rem 0;
-      letter-spacing: 0.1rem;
-      margin: 1rem 0 4rem 0;
-    }
-    @include xxs{
-      font-size: 2rem;
-      line-height: 3.2rem;
-      margin: 1rem 0 3.25rem 0;
-      letter-spacing: 0.1rem;
-      margin: 1rem 0 2rem 0;
-    }   
-  }
-  .cardText{
-    margin-bottom: 2rem;
-    font-size: 2.4rem;
-    line-height: 3.6rem;  
-    max-width: 43.5rem;
-    @include l{
-      font-size: 1.95rem;
-      line-height: 2.92rem;
-    }
-    @include sm{
-      margin-bottom: 4rem;
-    }
-    @include xxs{
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-      margin-bottom: 2rem;
-    }
-  }
-  .linkBanner{
-    @include xxs{
-      font-size: 1.6rem;
-    }    
-  }
-  .underline{
-    width: 20%;
-    height: 0.3rem;
-    background: var(--primary);
-    margin-bottom: 4rem;
-    @include md{
+    .underline {
+      margin-bottom: 2.5em;
       width: 50%;
     }
-    @include sm{
-      width: 50%;
-    }
-    @include xs{
-      width: 50%;
-    }
-    @include xxs{
-      width: 50%;
-      margin-bottom: 2rem;
+    .navLink {
+      font-size: 1.5em;
     }
   }
-  &::before{
+  &::before {
     content: "";
     position: absolute;
-    width: 55%;
+    width: 51.3%;
     height: 100%;
+    top: 0;
     right: 0;
-    background:center center / cover url(../../../../assets/images/banner.png) no-repeat;
-    background-position: 0rem -35rem;
-    z-index: 1;
-    @include xl{
-      background-position: 0rem -22rem;
-
-    }
-    @include l{
-      background-position: 0rem -16rem;
-    }
-    @include md{
-      display: none;
-    }
-    @include sm{
-      display: none;
-    }
-    @include xs{
-      display: none;
-    }
-    @include xxs{
-      display: none;
-    }
+    background: center center / cover url(../../../../assets/images/banner.png)
+      no-repeat;
+    background-position: 0rem -30rem;
+    z-index: -1;
   }
 }

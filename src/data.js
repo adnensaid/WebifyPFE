@@ -12,6 +12,7 @@ import design1 from './assets/images/portfolio/mockups.png';
 import design2 from './assets/images/portfolio/appvision.png';
 
 
+
 const data = [
   {
     title:'p1',

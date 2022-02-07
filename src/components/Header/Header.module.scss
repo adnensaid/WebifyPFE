@@ -1,86 +1,52 @@
-@import "../../assets/styles/media-queries";
-.header{
-  padding: 5.1rem 0rem;
-  @include xl{
-    padding: 5.1rem 0rem;
+.header {
+  font-size: 16px;
+  line-height: 2.62em;
+  padding: 3.34em 0;
+  margin-bottom: 1em;
+  .logo {
+    max-width: 50vw;
   }
-  @include l{
-    padding: 5.1rem 0rem;
-
-  }
-  @include md{
-    background: var(--light) !important;
-  }
-  @include sm{
-    background: var(--light) !important;
-  }
-  @include xs{
-    background: var(--light) !important;
-  }
-  @include xxs{
-    background: var(--light) !important;
-  }
-
-  .navlink{
-    font-family: 'be_vietnamextrabold';
-    font-size: 1.6rem;
-    line-height: 1.6rem;
-    letter-spacing: 0.1rem;
-    padding: 1.4rem 1.8rem; 
-    text-decoration: none;
-    @include l{
-      font-size: 1.4rem;
-      padding: 1.1rem 1rem; 
+  .navbarMenu {
+    margin-top: 3.5em; //(line-height + padding)
+    .navlink {
+      display: block;
+      font-family: "be_vietnamextrabold";
+      letter-spacing: 0.15em;
+      padding: 0rem 0.89em;
+      text-decoration: none;
+      border-top: 0.1rem solid var(--text);
+      color: var(--dark);
     }
   }
-  @include md{
-    .navbarMenu{
-      margin-top: 4rem;
-    }
-    .navlink{
-      color: var(--text) !important;
-      text-align: center;
-    }
-  }
-  @include sm{
-    .navbarMenu{
-      margin-top: 4rem;
-    }
-    .navlink{
-      color: var(--text) !important;
-      text-align: center;
-    }
-  }
-  @include xs{
-    padding: 3.8rem 0rem;
-    .logo{
-      max-width: 80%;
-    }
-    .navbarMenu{
-      margin-top: 4rem;
-    }
-    .navlink{
-      color: var(--text) !important;
-      text-align: center;
-      font-size: 1.3rem;
-      padding: 1rem 1.8rem; 
-    }
-  }
-  @include xxs{
-    padding: 3.8rem 0rem;
-    .logo{
-      max-width: 80%;
-    }
-    .navbarMenu{
-      margin-top: 4rem;
-    }
-    .navlink{
-      color: var(--text) !important;
-      text-align: center;
-      font-size: 1.3rem;
-      padding: 1rem 1.8rem; 
-    }
-  }
-  
 }
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .header {
+    margin-bottom: 3.34em;
+    .navbarMenu {
+      margin-top: 0 !important;
+      .navlink {
+        border-radius: 0.4em;
+        display: inline-block;
+        border-top: none !important;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}

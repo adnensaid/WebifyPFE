@@ -1,72 +1,68 @@
-@import '../../assets/styles/media-queries';
 /* utils */
-.rounded-6{
+.tab-space {
+  padding-right: 1rem;
+}
+.rounded-6 {
   border-radius: 5rem;
 }
-.mb-6{
+.py-6 {
+  padding: 5.2rem 0;
+}
+.mb-6 {
   margin-bottom: 6rem;
 }
-.mb-8{
+.mb-8 {
   margin-bottom: 8rem;
-  @include md{
-    margin-bottom: 2rem;
-  }
-  @include sm{
-    margin-bottom: 2rem;
-  }
-  @include xs{
-    margin-bottom: 2rem;
-  }
 }
-.my-8{
+.my-8 {
   margin: 8rem 0;
 }
-.mt-6{
+.mt-6 {
   margin-top: 6.8rem !important;
 }
-.my-5{
+.my-5 {
   margin: 5rem 0;
 }
-.m-1{
+.m-1 {
   margin: 1rem;
 }
-.m-2{
+.m-2 {
   margin: 2rem;
 }
-.p-2{
+.p-2 {
   padding: 2rem;
 }
-.p-1{
+.p-1 {
   padding: 1rem;
 }
-.p-3{
+.p-3 {
   padding: 3rem;
 }
-.d-flex{
+.d-flex {
   display: flex;
 }
-.flex-row{
+.flex-row {
   flex-direction: row;
 }
-.flex-column{
+.flex-column {
   flex-direction: column;
 }
 
-.align-items-center{
+.align-items-center {
   align-items: center;
 }
-.justify-content-center{
+.justify-content-center {
   justify-content: center;
 }
-.flex-fill{
+.flex-fill {
   flex: 1;
 }
 
-.border-radius-5{
+.border-radius-5 {
   border-radius: 0.5rem;
 }
 
 /*  colors */
-.bgred{
-  background: 'red';
+.bgred {
+  background: "red";
 }

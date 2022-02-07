@@ -1,22 +1,8 @@
-
-:root{
-  --primary:#f9aa00;
-  --secondary:#046ccd;
-  --text-primary:#01204d;
-  --text-secondary:#046ccd;
-  --light:#f8f9fa;
-
-
-  --gray: #f6f6f6;
-  --gray-light:#f3f3f4;
-  --gray-title: #dbdada;
-  --white:#ffffff;
-  --blue:#046ccd;
-  --socials:#0785cc;
-  --blue-secondary:#0b2750;
-  --text:#000;
-
-  --shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
-
+:root {
+  --primary: #f9aa00;
+  --secondary: #046ccd;
+  --text: #0b2750;
+  --text-primary: #01204d;
+  --text-secondary: #046ccd;
+  --light: $light;
 }
-

@@ -1,8 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./index.scss";
+import Wrapper from "./components/Wrapper";
 
-
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Wrapper>
+    <App />
+  </Wrapper>,
+  document.getElementById("root")
+);
