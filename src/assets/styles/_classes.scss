@@ -3,8 +3,8 @@
   margin: 0 auto;
 }
 .container-fluid {
-  max-width: 1400px !important;
-  margin: 0 auto;
+  max-width: 100% !important;
+  padding: 0 2rem;
 }
 .btn {
   font-family: "be_vietnammedium";
@@ -52,20 +52,4 @@
   color: var(--blue-secondary);
   margin: 0;
   margin-bottom: 4rem;
-}
-
-@media (min-width: 576px) {
-  .active {
-    background: $primary;
-    color: $body-bg !important;
-  }
-  .header-light {
-    color: var(--light);
-  }
-  .header-dark {
-    color: var(--text);
-  }
-  .title-section {
-    text-align: left;
-  }
 }

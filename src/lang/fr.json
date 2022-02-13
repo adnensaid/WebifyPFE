@@ -4,14 +4,15 @@
   "app.header.navlink2": "PORTFOLIO",
   "app.header.navlink3": "TÉMOIGNAGES",
   "app.header.navlink4": "CONTACT",
+
   "app.titleContact": "CONTACTEZ-NOUS",
-
   "app.titleTestimonials": "TÉMOIGNAGES",
-
   "app.titleServices": "SERVICES",
   "app.titlePortfolio": "PORTFOLIO",
 
   "app.banner.title": "CRÉATION DE SITES WEB ET APPLICATION MOBILES SUR MESURE",
+  "app.banner.text": "Lorem ipsum dolor sit amet, consectutur adipiscing elit, sed do eiusmod tempor Ut enim ad Lorem ipsum dolor sit amet,",
+
   "app.content": "",
   "app.channel.plug": "Tutoriel présenté par Lokalise"
 }

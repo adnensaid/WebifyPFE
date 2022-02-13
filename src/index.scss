@@ -1,6 +1,6 @@
 @import "./assets/styles/reset";
 @import "./custom.scss";
-@import "./assets/styles/variables";
+@import "./assets/styles/base";
 @import "./assets/styles/classes";
 @import "./assets/styles/utils";
 
@@ -12,15 +12,14 @@
 @import "./assets/fonts/myriad/stylesheet.css";
 
 /* classes */
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 body {
-  color: var(--text);
   font-family: "robotoregular";
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 }
 
 #pills-contact-tab.active {
@@ -34,18 +33,53 @@ body {
   flex-direction: column;
   overflow: scroll;
   .page {
-    margin-top: 20rem;
+    padding-top: 17.2rem;
   }
   .section {
     margin-bottom: 6rem;
   }
 }
 
+/* header */
+.header-transparent,
+.header-light {
+  background: var(--bs-light);
+  .nav-link {
+    color: var(--bs-dark);
+  }
+}
+.navbar-toggler-icon {
+  background-image: url(./assets/images/burger.svg);
+}
+@media (min-width: 1200px) {
+  .header-transparent {
+    background: transparent;
+    .nav-link {
+      color: white;
+    }
+  }
+  .header-light {
+    background: var(--bs-light) !important;
+    .nav-link {
+      background: var(--bs-light);
+      color: var(--bs-dark);
+    }
+    .active {
+      background: $primary !important;
+      color: $body-bg;
+    }
+  }
+  .active {
+    background: $primary;
+    color: $body-bg !important;
+  }
+  .title-section {
+    text-align: left;
+  }
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  body {
-    font-size: 1.6rem;
-  }
 }
 
 // Medium devices (tablets, 768px and up)

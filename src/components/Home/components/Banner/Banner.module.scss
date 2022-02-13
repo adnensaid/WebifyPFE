@@ -1,42 +1,64 @@
 .banner {
-  min-height: 100vh;
-  padding-top: 25vh;
   position: relative;
   .card {
-    font-size: 1.6rem;
-    max-width: 28.75em;
+    line-height: 1.2;
     border: 0;
+    max-width: 28rem;
     .cardTitle {
-      font-size: 1.875em;
+      font-size: 1.9rem;
       letter-spacing: 0.1em;
-      line-height: 1.3em;
-      margin: 0;
-      margin-bottom: 1.3333em;
+      &::after {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 0.2rem;
+        background: var(--bs-primary);
+        margin: 2.52rem 0;
+      }
     }
     .cardText {
-      font-size: 1.5em;
-      line-height: 1.2em;
-      margin: 0;
-      margin-bottom: 1.6666em;
+      font-size: 1.52rem;
+      margin-bottom: 2.52rem;
     }
-    .underline {
-      margin-bottom: 2.5em;
-      width: 50%;
-    }
-    .navLink {
-      font-size: 1.5em;
+    .btnLink {
+      font-size: 1.52rem;
+      color: var(--bs-light);
     }
   }
-  &::before {
-    content: "";
-    position: absolute;
-    width: 51.3%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background: center center / cover url(../../../../assets/images/banner.png)
-      no-repeat;
-    background-position: 0rem -30rem;
-    z-index: -1;
+}
+@media (min-width: 576px) {
+  .banner {
+    min-height: 100vh;
+    .card {
+      max-width: 45rem;
+      .cardTitle {
+        font-size: 3rem;
+        &::after {
+          margin: 4rem 0;
+        }
+      }
+      .cardText {
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+      }
+      .btnLink {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .banner {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 53vw;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: center center / cover
+        url(../../../../assets/images/banner.png) no-repeat;
+      background-position: 0 -170px;
+    }
   }
 }
