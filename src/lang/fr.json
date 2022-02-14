@@ -21,6 +21,21 @@
   "app.home.expertiseElem4": "WEB DESIGN",
   "app.home.expertiseBtn": "Voir tous !",
 
+  "app.home.titleServices": "NOS SERVICES ET PACKS",
+  "app.home.serviceElemTitle0": "PACK VITRINE",
+  "app.home.serviceElemText0": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
+
+  "app.home.serviceElemTitle1": "PACK APP. MOBILE",
+  "app.home.serviceElemText1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
+
+  "app.home.serviceElemTitle2": "PACK E-COMMERCE",
+  "app.home.serviceElemText2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
+
+  "app.home.serviceElemTitle3": "PACK APP. MOBILE",
+  "app.home.serviceElemText3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
+
+  "app.home.seviceBtn": "Je découvre",
+
   "app.content": "",
   "app.channel.plug": "Tutoriel présenté par Lokalise"
 }

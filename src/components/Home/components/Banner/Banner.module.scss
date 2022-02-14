@@ -1,14 +1,9 @@
 .banner {
   position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   .card {
-    line-height: 1.2;
     border: 0;
     max-width: 28rem;
     .cardTitle {
-      font-size: 1.9rem;
-      letter-spacing: 0.1em;
       &::after {
         content: "";
         display: block;
@@ -18,14 +13,6 @@
         margin: 2.52rem 0;
       }
     }
-    .cardText {
-      font-size: 1.52rem;
-      margin-bottom: 2.52rem;
-    }
-    .btnLink {
-      font-size: 1.52rem;
-      color: var(--bs-light);
-    }
   }
 }
 @media (min-width: 576px) {
@@ -33,17 +20,9 @@
     .card {
       max-width: 45rem;
       .cardTitle {
-        font-size: 3rem;
         &::after {
           margin: 4rem 0;
         }
-      }
-      .cardText {
-        font-size: 2.4rem;
-        margin-bottom: 4rem;
-      }
-      .btnLink {
-        font-size: 2.4rem;
       }
     }
   }
@@ -60,7 +39,7 @@
       height: 100%;
       background: center center / cover
         url(../../../../assets/images/banner.png) no-repeat;
-      background-position: 0 -300px;
+      background-position: 0 -270px;
     }
   }
 }

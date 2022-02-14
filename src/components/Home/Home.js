@@ -3,7 +3,7 @@ import { FormattedMessage } from "react-intl";
 import { Banner, Expertise, SercicesPacks } from "./components/index";
 const Home = () => {
   return (
-    <div className="home">
+    <>
       <Banner />
       <Expertise />
       <SercicesPacks />
@@ -12,7 +12,7 @@ const Home = () => {
         </h2>
         
          */}
-    </div>
+    </>
   );
 };
 export default Home;

@@ -12,14 +12,16 @@
 @import "./assets/fonts/myriad/stylesheet.css";
 
 /* classes */
-html {
+:root {
   font-size: 62.5%;
+}
+html {
   scroll-behavior: smooth;
 }
 body {
   font-family: "robotoregular";
   font-size: 1.6rem;
-  line-height: 1.8rem;
+  line-height: 1.2;
 }
 
 #pills-contact-tab.active {
@@ -35,7 +37,8 @@ body {
   .page {
     padding-top: 14.2rem;
   }
-  .section {
+  .section,
+  section {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
@@ -51,7 +54,7 @@ body {
 /* header */
 .header-transparent,
 .header-light {
-  background: var(--bs-light);
+  background: var(--bs-gray-200);
   .nav-link {
     color: var(--bs-dark);
   }
@@ -59,11 +62,43 @@ body {
 .navbar-toggler-icon {
   background-image: url(./assets/images/burger.svg);
 }
-
+.paragraph {
+  font-family: "robotoregular";
+  color: var(--blue-secondary);
+  font-size: 1.52rem;
+  margin-bottom: 2.52rem;
+}
+.btn {
+  font-size: 1.52rem;
+}
+h1 {
+  font-size: 1.9rem;
+  letter-spacing: 0.1em;
+}
+h2 {
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 2.52rem;
+  font-family: "bahnschrift";
+}
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .title-section {
     font-size: 7.2rem;
+  }
+  .paragraph {
+    font-size: 2.4rem;
+    margin-bottom: 3.5rem;
+  }
+  .btn {
+    font-size: 2.4rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 3.6rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -83,9 +118,9 @@ body {
     }
   }
   .header-light {
-    background: var(--bs-light) !important;
+    background: var(--bs-gray-200) !important;
     .nav-link {
-      background: var(--bs-light);
+      background: var(--bs-gray-200);
       color: var(--bs-dark);
     }
     .active {

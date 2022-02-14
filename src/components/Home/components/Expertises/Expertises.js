@@ -10,16 +10,16 @@ import { FormattedMessage, FormattedDate } from "react-intl";
 export default class Expertises extends Component {
   render() {
     return (
-      <section className={Style.expertises + " section"}>
-        <p className="title-section">
-          <FormattedMessage
-            id="app.home.titleExpertises"
-            defaultMessage="NOS EXPERTISES"
-          />
-        </p>
+      <section className={Style.expertises}>
         <div className="container">
-          <div className={Style.expertisesContent}>
-            <div className={Style.expertiseElem}>
+          <p className="title-section">
+            <FormattedMessage
+              id="app.home.titleExpertises"
+              defaultMessage="NOS EXPERTISES"
+            />
+          </p>
+          <ul className={Style.expertisesContent}>
+            <li className={Style.expertiseElem}>
               <img src={icon3} alt="icon" className="img-thumbnail border-0" />
               <p className={Style.textExpertise}>
                 <FormattedMessage
@@ -27,8 +27,8 @@ export default class Expertises extends Component {
                   defaultMessage="RESPONSIVE DESIGN"
                 />
               </p>
-            </div>
-            <div className={Style.expertiseElem}>
+            </li>
+            <li className={Style.expertiseElem}>
               <img src={icon4} alt="icon" className="img-thumbnail border-0" />
               <p className={Style.textExpertise}>
                 <FormattedMessage
@@ -36,8 +36,8 @@ export default class Expertises extends Component {
                   defaultMessage="CONSEILS"
                 />
               </p>
-            </div>
-            <div className={Style.expertiseElem}>
+            </li>
+            <li className={Style.expertiseElem}>
               <img src={icon5} alt="icon" className="img-thumbnail border-0" />
               <p className={Style.textExpertise}>
                 <FormattedMessage
@@ -45,8 +45,8 @@ export default class Expertises extends Component {
                   defaultMessage="CMS"
                 />
               </p>
-            </div>
-            <div className={Style.expertiseElem}>
+            </li>
+            <li className={Style.expertiseElem}>
               <img src={icon6} alt="icon" className="img-thumbnail border-0" />
               <p className={Style.textExpertise}>
                 <FormattedMessage
@@ -54,8 +54,8 @@ export default class Expertises extends Component {
                   defaultMessage="DEVELOPPEMENT"
                 />
               </p>
-            </div>
-            <div className={Style.expertiseElem}>
+            </li>
+            <li className={Style.expertiseElem}>
               <img src={icon7} alt="icon" className="img-thumbnail border-0" />
               <p className={Style.textExpertise}>
                 <FormattedMessage
@@ -63,10 +63,10 @@ export default class Expertises extends Component {
                   defaultMessage="WEB DESIGN"
                 />
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div className="text-center">
-            <button href="#" className={Style.btnDetail + " btn btn-primary"}>
+            <button href="#" className="btn btn-primary">
               <FormattedMessage
                 id="app.home.expertiseBtn"
                 defaultMessage="Voir tous !"

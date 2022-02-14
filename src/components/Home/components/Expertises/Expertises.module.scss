@@ -1,52 +1,32 @@
 .expertises {
   background: var(--bs-gray-200);
   font-family: "be_vietnamsemibold";
+  font-size: 1.1rem;
   .expertisesContent {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     justify-items: center;
+    margin-bottom: 5rem;
     .expertiseElem {
-      width: 18rem;
-      height: 15rem;
-      background: var(--bs-white);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 1.25rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+      gap: 2rem;
+      justify-items: center;
+      padding: 2rem 4rem;
+      width: 26rem;
       border-radius: 30px;
-
-      img {
-        flex: 1;
-        max-width: 10rem;
-      }
+      background: var(--bs-white);
       .textExpertise {
-        margin-top: 0.2rem;
         color: var(--bs-secondary);
-        font-size: 1rem;
       }
     }
-  }
-  .btnDetail {
-    font-size: 1.52rem;
-    color: var(--bs-white);
-    margin-top: 5rem;
   }
 }
 @media (min-width: 576px) {
   .expertises {
-    .expertisesContent {
-      .expertiseElem {
-        width: 20rem;
-        .textExpertise {
-          margin-top: 0.2rem;
-          font-size: 1.6rem;
-        }
-      }
-    }
-    .btnDetail {
-      font-size: 2.4rem;
-    }
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 768px) {
@@ -60,6 +40,9 @@
   .expertises {
     .expertisesContent {
       grid-template-columns: repeat(3, 1fr);
+      .expertiseElem {
+        padding: 2rem 3rem;
+      }
     }
   }
 }
@@ -67,6 +50,10 @@
   .expertises {
     .expertisesContent {
       grid-template-columns: repeat(5, 1fr);
+      .expertiseElem {
+        width: 100%;
+        padding: 2rem 3rem;
+      }
     }
   }
 }

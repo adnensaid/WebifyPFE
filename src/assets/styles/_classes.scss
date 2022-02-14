@@ -8,7 +8,7 @@
 }
 .btn {
   font-family: "be_vietnammedium";
-  color: var(--light);
+  color: var(--bs-white);
   cursor: pointer;
   display: inline-block;
   padding: 0.35em 1.6em;
@@ -19,24 +19,18 @@
   text-decoration: none;
   text-align: center;
   transition: all 0.2s;
+  font-size: 2.4rem;
   &:hover {
-    color: var(--light) !important;
+    color: var(--bs-white);
   }
 }
 
-.paragraph {
-  font-family: "robotoregular";
-  color: var(--blue-secondary);
-}
 .title {
   font-family: "be_vietnamsemibold";
   color: var(--text-primary);
 }
 .titre-secondary {
-  font-size: 3.6rem;
-  line-height: 3.6rem;
   font-family: "bahnschrift";
   color: var(--blue-secondary);
   margin: 0;
-  margin-bottom: 4rem;
 }

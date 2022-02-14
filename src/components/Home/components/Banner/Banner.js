@@ -6,9 +6,9 @@ import { FormattedMessage, FormattedDate } from "react-intl";
 export default class Banner extends Component {
   render() {
     return (
-      <div className={Style.banner}>
+      <div className={Style.banner + " page"}>
         <div className="container-fluid">
-          <div className={Style.card + " page"}>
+          <section className={Style.card}>
             <h1 className={Style.cardTitle}>
               <FormattedMessage
                 id="app.banner.title"
@@ -16,16 +16,16 @@ export default class Banner extends Component {
               />
             </h1>
             <div className={Style.underline + " underline"}></div>
-            <p className={Style.cardText + " paragraph"}>
+            <p className="paragraph">
               <FormattedMessage
                 id="app.banner.text"
                 defaultMessage="Lorem ipsum dolor sit amet, consectutur adipiscing elit, sed do eiusmod tempor Ut enim ad Lorem ipsum dolor sit amet,"
               />
             </p>
-            <a href="#" className={Style.btnLink + " btn btn-primary"}>
+            <a href="#" className="btn btn-primary">
               Découvrez-nous!
             </a>
-          </div>
+          </section>
         </div>
       </div>
     );
