@@ -6,9 +6,9 @@ import { FormattedMessage, FormattedDate } from "react-intl";
 export default class Banner extends Component {
   render() {
     return (
-      <div className={Style.banner + " page"}>
+      <div className={Style.banner}>
         <div className="container-fluid">
-          <div className={Style.card}>
+          <div className={Style.card + " page"}>
             <h1 className={Style.cardTitle}>
               <FormattedMessage
                 id="app.banner.title"

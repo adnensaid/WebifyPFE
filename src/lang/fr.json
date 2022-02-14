@@ -13,6 +13,13 @@
   "app.banner.title": "CRÉATION DE SITES WEB ET APPLICATION MOBILES SUR MESURE",
   "app.banner.text": "Lorem ipsum dolor sit amet, consectutur adipiscing elit, sed do eiusmod tempor Ut enim ad Lorem ipsum dolor sit amet,",
 
+  "app.home.titleExpertises": "NOS EXPERTISES",
+  "app.home.expertiseElem0": "RESPONSIVE DESIGN",
+  "app.home.expertiseElem1": "CONSEILS",
+  "app.home.expertiseElem2": "CMS",
+  "app.home.expertiseElem3": "DEVELOPPEMENT",
+  "app.home.expertiseElem4": "WEB DESIGN",
+
   "app.content": "",
   "app.channel.plug": "Tutoriel présenté par Lokalise"
 }

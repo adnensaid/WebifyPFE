@@ -1,5 +1,7 @@
 .banner {
   position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   .card {
     line-height: 1.2;
     border: 0;
@@ -28,7 +30,6 @@
 }
 @media (min-width: 576px) {
   .banner {
-    min-height: 100vh;
     .card {
       max-width: 45rem;
       .cardTitle {
@@ -49,16 +50,17 @@
 }
 @media (min-width: 1200px) {
   .banner {
-    &::before {
+    min-height: 100vh;
+    &::after {
       content: "";
       position: absolute;
-      width: 53vw;
       top: 0;
       right: 0;
-      bottom: 0;
+      width: 53%;
+      height: 100%;
       background: center center / cover
         url(../../../../assets/images/banner.png) no-repeat;
-      background-position: 0 -170px;
+      background-position: 0 -300px;
     }
   }
 }
