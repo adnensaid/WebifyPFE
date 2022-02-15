@@ -3,20 +3,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 50rem;
+    max-width: 30rem;
     margin: auto;
     .servicesElem {
-      margin-bottom: 7rem;
+      margin-bottom: 4.3em;
       &:last-child {
         margin-bottom: 0;
       }
       .servicesText {
-        margin-top: 5rem;
+        margin-top: 3.12em;
+        .linkServices {
+          width: 60%;
+        }
       }
     }
   }
 }
-
+@media (min-width: 576px) {
+  .services {
+    .servicesList {
+      max-width: 40rem;
+    }
+  }
+}
+@media (min-width: 768px) {
+}
 @media (min-width: 992px) {
   .services {
     .servicesList {
@@ -27,7 +38,9 @@
           margin-bottom: 0;
         }
         display: flex;
-
+        p {
+          max-width: 40rem;
+        }
         &:nth-child(2n) {
           flex-flow: row-reverse;
           .servicesText {
@@ -50,6 +63,9 @@
       max-width: 100%;
       .servicesElem {
         display: flex;
+        p {
+          max-width: 100%;
+        }
         &:nth-child(2n) {
           .imgService {
             flex: 1;

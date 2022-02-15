@@ -1,13 +1,20 @@
 .header {
-  font-size: 16px;
   font-family: "be_vietnamextrabold";
   .logo {
-    max-width: 20rem;
+    max-width: 12rem;
   }
   .navbar {
-    padding: 5.2rem 0;
+    padding: 2.82em 0;
+    .togglerIcon {
+      background-image: url(../../assets/images/burger.svg);
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .navbarMenu {
-      margin-top: 3em;
+      margin-top: 4.55rem;
       .navLink {
         letter-spacing: 0.06em;
         text-decoration: none;
@@ -18,9 +25,17 @@
     }
   }
 }
+@media (min-width: 576px) {
+  .header {
+    .logo {
+      max-width: 100%;
+    }
+  }
+}
 @media (min-width: 1200px) {
   .header {
     .navbar {
+      padding: 5.2rem 0;
       .navbarMenu {
         margin-top: 0;
         .navLink {

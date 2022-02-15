@@ -2,9 +2,10 @@
   max-width: 1200px !important;
   margin: 0 auto;
 }
-.container-fluid {
-  max-width: 100% !important;
-  padding: 0 2rem;
+.container-small {
+  max-width: 1000px !important;
+  margin: 0 auto;
+  padding: 0 7.5px;
 }
 .btn {
   font-family: "be_vietnammedium";
@@ -19,7 +20,6 @@
   text-decoration: none;
   text-align: center;
   transition: all 0.2s;
-  font-size: 2.4rem;
   &:hover {
     color: var(--bs-white);
   }

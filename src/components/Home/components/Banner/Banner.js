@@ -23,7 +23,10 @@ export default class Banner extends Component {
               />
             </p>
             <a href="#" className="btn btn-primary">
-              Découvrez-nous!
+              <FormattedMessage
+                id="app.banner.btn"
+                defaultMessage="Découvrez-nous!"
+              />
             </a>
           </section>
         </div>

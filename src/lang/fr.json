@@ -12,6 +12,7 @@
 
   "app.banner.title": "CRÉATION DE SITES WEB ET APPLICATION MOBILES SUR MESURE",
   "app.banner.text": "Lorem ipsum dolor sit amet, consectutur adipiscing elit, sed do eiusmod tempor Ut enim ad Lorem ipsum dolor sit amet,",
+  "app.banner.btn": "Découvrez-nous!",
 
   "app.home.titleExpertises": "NOS EXPERTISES",
   "app.home.expertiseElem0": "RESPONSIVE DESIGN",
@@ -24,16 +25,12 @@
   "app.home.titleServices": "NOS SERVICES ET PACKS",
   "app.home.serviceElemTitle0": "PACK VITRINE",
   "app.home.serviceElemText0": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
-
-  "app.home.serviceElemTitle1": "PACK APP. MOBILE",
+  "app.home.serviceElemTitle1": "PACK E-COMMERCE",
   "app.home.serviceElemText1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
-
-  "app.home.serviceElemTitle2": "PACK E-COMMERCE",
+  "app.home.serviceElemTitle2": "PACK APP. MOBILE",
   "app.home.serviceElemText2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
-
-  "app.home.serviceElemTitle3": "PACK APP. MOBILE",
+  "app.home.serviceElemTitle3": "PACK SUR MESURE",
   "app.home.serviceElemText3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
-
   "app.home.seviceBtn": "Je découvre",
 
   "app.content": "",

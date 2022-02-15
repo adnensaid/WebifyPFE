@@ -19,14 +19,15 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  font-size: $font-size-sm;
   font-family: "robotoregular";
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   line-height: 1.2;
 }
 
 #pills-contact-tab.active {
-  background: $secondary;
-  color: var(--light) !important;
+  background: var(--bs-secondary);
+  color: var(--bs-white) !important;
   border-radius: 1rem;
 }
 .App {
@@ -35,21 +36,20 @@ body {
   flex-direction: column;
   overflow: scroll;
   .page {
-    padding-top: 14.2rem;
+    padding-top: 7em;
   }
   .section,
   section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 2.9rem;
+    padding-bottom: 2.9rem;
   }
 }
 .title-section {
+  font-size: 4.2rem;
+  margin-bottom: 2.9rem;
   color: var(--bs-gray-500);
-  font-size: 4rem;
-  line-height: 1em;
   text-align: center;
   font-family: "be_vietnamextrabold";
-  margin-bottom: 5rem;
 }
 /* header */
 .header-transparent,
@@ -59,20 +59,18 @@ body {
     color: var(--bs-dark);
   }
 }
-.navbar-toggler-icon {
-  background-image: url(./assets/images/burger.svg);
-}
+
 .paragraph {
   font-family: "robotoregular";
   color: var(--blue-secondary);
-  font-size: 1.52rem;
-  margin-bottom: 2.52rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
 }
 .btn {
-  font-size: 1.52rem;
+  font-size: 1.4rem;
 }
 h1 {
-  font-size: 1.9rem;
+  font-size: 1.75rem;
   letter-spacing: 0.1em;
 }
 h2 {
@@ -81,40 +79,117 @@ h2 {
   margin-bottom: 2.52rem;
   font-family: "bahnschrift";
 }
-// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+  body {
+    font-size: 1.22rem;
+  }
   .title-section {
     font-size: 7.2rem;
   }
-  .paragraph {
-    font-size: 2.4rem;
-    margin-bottom: 3.5rem;
-  }
+  .paragraph,
   .btn {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
+  }
+  .paragraph {
+    margin-bottom: 2.3rem;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   h2 {
     font-size: 3.6rem;
     margin-bottom: 3.5rem;
   }
+  .title-section {
+    font-size: 4.8rem;
+    margin-bottom: 3.3rem;
+  }
+  .section,
+  section {
+    padding-top: 3.3rem;
+    padding-bottom: 3.3rem;
+  }
 }
 
-// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  body {
+    font-size: 1.22rem;
+  }
+  .paragraph,
+  .btn {
+    font-size: 1.85rem;
+  }
+  .paragraph {
+    margin-bottom: 2.67rem;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+  .title-section {
+    font-size: 5.5rem;
+    margin-bottom: 3.8rem;
+  }
+  .section,
+  section {
+    padding-top: 3.8rem;
+    padding-bottom: 3.84rem;
+  }
 }
 
-// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  body {
+    font-size: 1.4rem;
+  }
+  .paragraph,
+  .btn {
+    font-size: 2rem;
+  }
+  .paragraph {
+    margin-bottom: 3rem;
+  }
+  h1 {
+    font-size: 2.6rem;
+  }
+  .title-section {
+    font-size: 6.3rem;
+    margin-bottom: 4.4rem;
+  }
+  .section,
+  section {
+    padding-top: 4.4rem;
+    padding-bottom: 4.4rem;
+  }
 }
 
 @media (min-width: 1200px) {
+  /* generique size */
+  body {
+    font-size: 1.6rem;
+  }
+  .paragraph,
+  .btn {
+    font-size: 2.4rem;
+  }
+  .paragraph {
+    margin-bottom: 3.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .title-section {
+    font-size: 7.2rem;
+    margin-bottom: 5rem;
+  }
+  .section,
+  section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  /* header */
   .header-transparent {
     background: transparent;
     .nav-link {
-      color: white;
+      color: var(--bs-white);
     }
   }
   .header-light {
@@ -133,6 +208,6 @@ h2 {
     color: $body-bg !important;
   }
 }
-// XX-Large devices (larger desktops, 1400px and up)
+
 @media (min-width: 1400px) {
 }
