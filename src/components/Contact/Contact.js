@@ -3,7 +3,7 @@ import { FormattedMessage } from "react-intl";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="page">
       <div className="container">
         <h2 className="title-section">
           <FormattedMessage id="app.titleContact" defaultMessage="" />

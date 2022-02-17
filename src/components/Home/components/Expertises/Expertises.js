@@ -12,13 +12,13 @@ export default class Expertises extends Component {
     return (
       <section className={Style.expertises}>
         <div className="container">
-          <p className="title-section">
+          <p className="h1 title-section">
             <FormattedMessage
               id="app.home.titleExpertises"
               defaultMessage="NOS EXPERTISES"
             />
           </p>
-          <ul className={Style.expertisesContent}>
+          <ul className={Style.expertisesContent + " pb-2"}>
             <li className={Style.expertiseElem}>
               <img src={icon3} alt="icon" className="img-thumbnail border-0" />
               <p className={Style.textExpertise}>

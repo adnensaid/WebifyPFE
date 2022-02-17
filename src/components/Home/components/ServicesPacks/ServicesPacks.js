@@ -18,15 +18,15 @@ export default class ServicesPacks extends Component {
             />
           </p>
           <div className={Style.servicesList}>
-            <div className={Style.servicesElem}>
+            <div className={Style.servicesElem + " mb-6"}>
               <img
                 className={Style.imgService + " img-fluid"}
                 src={service1}
                 alt="service"
                 data-aos="fade-left"
               />
-              <div className={Style.servicesText}>
-                <h2>
+              <div className={Style.servicesText + " mt-6"}>
+                <h2 className="title-secondary">
                   <FormattedMessage
                     id="app.home.serviceElemTitle0"
                     defaultMessage=""
@@ -49,15 +49,15 @@ export default class ServicesPacks extends Component {
                 </button>
               </div>
             </div>
-            <div className={Style.servicesElem}>
+            <div className={Style.servicesElem + " mb-6"}>
               <img
                 className={Style.imgService + " img-fluid"}
                 src={service2}
                 alt="service"
                 data-aos="fade-right"
               />
-              <div className={Style.servicesText}>
-                <h2>
+              <div className={Style.servicesText + " mt-6"}>
+                <h2 className="title-secondary">
                   <FormattedMessage
                     id="app.home.serviceElemTitle1"
                     defaultMessage="PACK E-COMMERCE"
@@ -83,14 +83,14 @@ export default class ServicesPacks extends Component {
                 </button>
               </div>
             </div>
-            <div className={Style.servicesElem}>
+            <div className={Style.servicesElem + " mb-6"}>
               <img
                 className={Style.imgService + " img-fluid"}
                 src={service3}
                 alt="service"
                 data-aos="fade-right"
               />
-              <div className={Style.servicesText}>
+              <div className={Style.servicesText + " mt-6"}>
                 <h2>
                   <FormattedMessage
                     id="app.home.serviceElemTitle2"
@@ -124,8 +124,8 @@ export default class ServicesPacks extends Component {
                 alt="service"
                 data-aos="fade-right"
               />
-              <div className={Style.servicesText}>
-                <h2>
+              <div className={Style.servicesText + " mt-6"}>
+                <h2 className="title-secondary">
                   <FormattedMessage
                     id="app.home.serviceElemTitle3"
                     defaultMessage="PACK SUR MESURE"

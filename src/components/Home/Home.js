@@ -5,6 +5,7 @@ import {
   Expertise,
   SercicesPacks,
   Portfolio,
+  Test,
 } from "./components/index";
 const Home = () => {
   return (
@@ -12,10 +13,13 @@ const Home = () => {
       <Banner />
       <Expertise />
       <SercicesPacks />
-      <Portfolio />
       {/*
-            
+                  
       
+      <Banner />
+      <Expertise />
+      
+      <Portfolio />      
        
  */}
     </>

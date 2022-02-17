@@ -15,10 +15,10 @@ export default class Projects extends Component {
           <h2 className="text-center">NOS DERNIER RÉALISATIONS</h2>
           <div className={Style.projectsContent}>
             <ButtonCategories projects={projects} setCategory={setCategory} />
-            <ProjectList
+            {/*             <ProjectList
               projects={projects}
               displayCategory={displayCategory}
-            />
+            /> */}
           </div>
         </div>
       </div>

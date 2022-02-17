@@ -36,8 +36,8 @@ export default class Header extends Component {
           className={
             this.props.scrollTop === 0 &&
             this.props.location.pathname === "/home"
-              ? Style.navbar + " navbar navbar-expand-xl header-transparent"
-              : Style.navbar + " navbar navbar-expand-xl header-light"
+              ? Style.navbar + " navbar navbar-expand-lg header-transparent"
+              : Style.navbar + " navbar navbar-expand-lg header-light"
           }
         >
           <div
@@ -48,7 +48,7 @@ export default class Header extends Component {
             }
           >
             <a className="navbar-brand" href="#">
-              <img src={logo} className={Style.logo} alt="" />
+              <img src={logo} className={Style.logo + " img-fluid"} alt="" />
             </a>
             <button
               className="navbar-toggler border"

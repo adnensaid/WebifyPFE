@@ -8,18 +8,23 @@
   padding: 0 7.5px;
 }
 .btn {
+  @include font-size(1.5rem);
+  @include padding-top(0.75rem !important);
+  @include padding-bottom(0.75rem !important);
+  @include padding-left(3rem !important);
+  @include padding-right(3rem !important);
+
   font-family: "be_vietnammedium";
   color: var(--bs-white);
   cursor: pointer;
   display: inline-block;
-  padding: 0.35em 1.6em;
-  border: 0.1em solid var(--primary);
-  margin: 0 0.3em 0.3em 0;
+  border: 0.1em solid $primary;
   border-radius: 0.4em;
   box-sizing: border-box;
   text-decoration: none;
   text-align: center;
   transition: all 0.2s;
+  line-height: 1em;
   &:hover {
     color: var(--bs-white);
   }
