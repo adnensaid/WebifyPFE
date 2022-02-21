@@ -7,35 +7,84 @@
   margin: 0 auto;
   padding: 0 7.5px;
 }
+
+@media (min-width: 1400px) {
+  .container-fluid {
+    @include padding-left(2.5rem);
+  }
+}
+/* title */
+.title {
+  font-family: "be_vietnamsemibold";
+  @include font-size(1.875rem);
+  letter-spacing: 1.2px;
+}
+.title-secondary {
+  @include font-size(2.25rem);
+  font-family: "bahnschrift";
+}
+.title-section {
+  font-family: "be_vietnamextrabold";
+  @include font-size(4.5rem);
+  text-align: center;
+  color: $gray-500;
+}
+.paragraph {
+  @include font-size(1.5rem);
+}
+
 .btn {
   @include font-size(1.5rem);
-  @include padding-top(0.75rem !important);
-  @include padding-bottom(0.75rem !important);
-  @include padding-left(3rem !important);
-  @include padding-right(3rem !important);
-
   font-family: "be_vietnammedium";
   color: var(--bs-white);
   cursor: pointer;
   display: inline-block;
-  border: 0.1em solid $primary;
   border-radius: 0.4em;
   box-sizing: border-box;
   text-decoration: none;
   text-align: center;
   transition: all 0.2s;
   line-height: 1em;
-  &:hover {
-    color: var(--bs-white);
+  border: none;
+  @include padding-top(0.8rem !important);
+  @include padding-bottom(0.8rem !important);
+  &.btn-primary {
+    @include padding-left(3rem !important);
+    @include padding-right(3rem !important);
+    &:hover,
+    &:focus {
+      color: var(--bs-white) !important;
+    }
+  }
+  &.btn-secondary {
+    color: var(--bs-secondary);
+    background: var(--bs-light);
+  }
+  &.btn-lg {
+    background: $primary;
+    @include padding-left(5.5rem !important);
+    @include padding-right(5.5rem !important);
+    &:hover,
+    &:focus {
+      color: var(--bs-white) !important;
+    }
   }
 }
 
-.title {
-  font-family: "be_vietnamsemibold";
-  color: var(--text-primary);
+.underline {
+  border-radius: 30px;
+  width: 60%;
+  height: 3px;
+  background: $primary;
 }
-.titre-secondary {
-  font-family: "bahnschrift";
-  color: var(--blue-secondary);
-  margin: 0;
+/* navbar portfolio */
+#pills-contact-tab.active {
+  background: var(--bs-secondary);
+  color: var(--bs-white);
+}
+@media (min-width: 992px) {
+  .active {
+    background: $primary;
+    color: $body-bg !important;
+  }
 }

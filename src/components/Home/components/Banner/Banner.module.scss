@@ -1,32 +1,14 @@
 .bannerText {
-  max-width: 27rem;
   margin: 7.37rem auto 0 auto;
+  max-width: 27rem;
 }
 .bannerImg {
   display: none;
 }
 
-@media (min-width: 576px) {
-  .bannerText {
-    h1 {
-      letter-spacing: 2.4px;
-    }
-  }
-}
-@media (min-width: 768px) {
-  .bannerText {
-    h1 {
-      letter-spacing: 0.5px;
-    }
-  }
-}
 @media (min-width: 992px) {
   .bannerText {
-    margin-left: 0;
-    margin-top: 9.37rem;
-    h1 {
-      letter-spacing: 2.2px;
-    }
+    margin: 9.37rem 0 0 0;
   }
   .bannerImg {
     display: block;
@@ -38,9 +20,6 @@
   }
 }
 @media (min-width: 1200px) {
-  .bannerText {
-    padding: 4rem 0;
-  }
   .bannerImg {
     max-width: 750px;
     max-height: 750px;

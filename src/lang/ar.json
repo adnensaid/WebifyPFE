@@ -4,11 +4,42 @@
   "app.header.navlink2": "ملف",
   "app.header.navlink3": "الشهادات",
   "app.header.navlink4": "اتصل",
-  "app.banner.title": "إنشاء مواقع الويب المخصصة وتطبيقات الهاتف المحمول",
+
   "app.titleContact": "اتصل بنا",
   "app.titleTestimonials": "الشهادات",
   "app.titleServices": "خدمات",
   "app.titlePortfolio": "ملف",
+
+  "app.banner.title": "إنشاء مواقع الويب المخصصة وتطبيقات الهاتف المحمول",
+  "app.banner.text": "لا يجوز تعريض أحد لتدخل تعسفي في حياته الخاصة أو في شؤون أسرته أو مسكنه أو مراسلاته، ولا لحملات تمس شرفه وسمعته. ولكل شخص حق في أن يحميه القانون من مثل ذلك التدخل أو تلك الحملات.",
+  "app.banner.btn": "اكتشفنا !",
+
+  "app.home.titleExpertises": "خبرتنا",
+  "app.home.expertiseElem0": "الرسم المتجاوب",
+  "app.home.expertiseElem1": "النصيحة",
+  "app.home.expertiseElem2": "CMS",
+  "app.home.expertiseElem3": "تطوير",
+  "app.home.expertiseElem4": "تصميم المواقع",
+  "app.home.expertiseBtn": "مشاهدة الكل !",
+
+  "app.home.titleServices": "خدماتنا وباقاتنا",
+  "app.home.serviceElemTitle0": "عرض حزمة",
+  "app.home.serviceElemText0": "لا يجوز تعريض أحد لتدخل تعسفي في حياته الخاصة أو في شؤون أسرته أو مسكنه أو مراسلاته، ولا لحملات تمس شرفه وسمعته. ولكل شخص حق في أن يحميه القانون من مثل ذلك التدخل أو تلك الحملات.",
+  "app.home.serviceElemTitle1": "التجارة الإلكترونية",
+  "app.home.serviceElemText1": "لا يجوز تعريض أحد لتدخل تعسفي في حياته الخاصة أو في شؤون أسرته أو مسكنه أو مراسلاته، ولا لحملات تمس شرفه وسمعته. ولكل شخص حق في أن يحميه القانون من مثل ذلك التدخل أو تلك الحملات.",
+  "app.home.serviceElemTitle2": "حزمة تطبيقات الجوال",
+  "app.home.serviceElemText2": "لا يجوز تعريض أحد لتدخل تعسفي في حياته الخاصة أو في شؤون أسرته أو مسكنه أو مراسلاته، ولا لحملات تمس شرفه وسمعته. ولكل شخص حق في أن يحميه القانون من مثل ذلك التدخل أو تلك الحملات.",
+  "app.home.serviceElemTitle3": "عبوات مصممة خصيصًا",
+  "app.home.serviceElemText3": "لا يجوز تعريض أحد لتدخل تعسفي في حياته الخاصة أو في شؤون أسرته أو مسكنه أو مراسلاته، ولا لحملات تمس شرفه وسمعته. ولكل شخص حق في أن يحميه القانون من مثل ذلك التدخل أو تلك الحملات.",
+  "app.home.seviceBtn": "اكتشفنا",
+
+  "app.home.titlePortfolio": "لدينا محفظة",
+  "app.home.titlePortfolio2": "أحدث إنجازاتنا",
+  "app.home.portfolio.navlink0": "الكل",
+  "app.home.portfolio.navlink1": "رسومي",
+  "app.home.portfolio.navlink2": "الشعارات",
+  "app.home.portfolio.navlink3": "تصميم الويب ",
+  "app.home.portfolio.navlink4": "تطبيقات الموبايل",
 
   "app.content": "",
   "app.channel.plug": "Tutoriel présenté par Lokalise"

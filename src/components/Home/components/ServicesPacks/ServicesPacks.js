@@ -4,44 +4,80 @@ import service1 from "../../../../assets/images/vitrine.png";
 import service2 from "../../../../assets/images/ecommerce.png";
 import service3 from "../../../../assets/images/appmobile.png";
 import service4 from "../../../../assets/images/surmesure.png";
-import { FormattedMessage, FormattedDate } from "react-intl";
+import { FormattedMessage } from "react-intl";
 
 export default class ServicesPacks extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      services: [
+        {
+          title: "PACK VITRINE",
+          text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
+          link: "#",
+          img: service1,
+        },
+        {
+          title: "PACK E-COMMERCE",
+          text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
+          link: "#",
+          img: service2,
+        },
+        {
+          title: "PACK APP. MOBILE",
+          text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
+          link: "#",
+          img: service3,
+        },
+        {
+          title: "PACK SUR MESURE",
+          text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
+          link: "#",
+          img: service4,
+        },
+      ],
+    };
+  }
   render() {
+    const length = this.state.services.length;
     return (
-      <section className={Style.services}>
-        <div className="container">
-          <p className="title-section">
-            <FormattedMessage
-              id="app.home.titleServices"
-              defaultMessage="NOS SERVICES ET PACKS"
-            />
-          </p>
-          <div className={Style.servicesList}>
-            <div className={Style.servicesElem + " mb-6"}>
+      <div className="container py-5">
+        <p className="title-section mb-6">
+          <FormattedMessage
+            id="app.home.titleServices"
+            defaultMessage="NOS SERVICES ET PACKS"
+          />
+        </p>
+        <div className={Style.servicesList}>
+          {this.state.services.map((s, i) => (
+            <div
+              className={
+                i === length - 1
+                  ? Style.servicesElem
+                  : Style.servicesElem + " mb-6"
+              }
+              key={i}
+            >
               <img
                 className={Style.imgService + " img-fluid"}
-                src={service1}
+                src={s.img}
                 alt="service"
                 data-aos="fade-left"
               />
-              <div className={Style.servicesText + " mt-6"}>
-                <h2 className="title-secondary">
+              <div className={Style.servicesText + " pt-6"}>
+                <h2 className="title-secondary mb-4">
                   <FormattedMessage
-                    id="app.home.serviceElemTitle0"
-                    defaultMessage=""
+                    id={"app.home.serviceElemTitle" + i}
+                    defaultMessage={s.title}
                   ></FormattedMessage>
                 </h2>
-                <p className="paragraph">
+                <p className="paragraph mb-4">
                   <FormattedMessage
-                    id="app.home.serviceElemText0"
-                    defaultMessage="Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit"
+                    id={"app.home.serviceElemText" + i}
+                    defaultMessage={s.text}
                   />
                 </p>
-                <button
-                  href="#"
-                  className={Style.linkServices + " btn btn-primary"}
-                >
+                <button href={s.link} className=" btn btn-lg">
                   <FormattedMessage
                     id="app.home.seviceBtn"
                     defaultMessage="Je découvre"
@@ -49,111 +85,9 @@ export default class ServicesPacks extends Component {
                 </button>
               </div>
             </div>
-            <div className={Style.servicesElem + " mb-6"}>
-              <img
-                className={Style.imgService + " img-fluid"}
-                src={service2}
-                alt="service"
-                data-aos="fade-right"
-              />
-              <div className={Style.servicesText + " mt-6"}>
-                <h2 className="title-secondary">
-                  <FormattedMessage
-                    id="app.home.serviceElemTitle1"
-                    defaultMessage="PACK E-COMMERCE"
-                  />
-                </h2>
-                <p className="paragraph">
-                  <FormattedMessage
-                    id="app.home.serviceElemText1"
-                    defaultMessage="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Illum, quae facere pariatur sunt voluptas dolor aliquid libero
-                    maxime? Aspernatur, eius officia. Ex sit minus saepe impedit
-                    fugit"
-                  />
-                </p>
-                <button
-                  href="#"
-                  className={Style.linkServices + " btn btn-primary"}
-                >
-                  <FormattedMessage
-                    id="app.home.seviceBtn"
-                    defaultMessage="Je découvre"
-                  />
-                </button>
-              </div>
-            </div>
-            <div className={Style.servicesElem + " mb-6"}>
-              <img
-                className={Style.imgService + " img-fluid"}
-                src={service3}
-                alt="service"
-                data-aos="fade-right"
-              />
-              <div className={Style.servicesText + " mt-6"}>
-                <h2>
-                  <FormattedMessage
-                    id="app.home.serviceElemTitle2"
-                    defaultMessage="PACK APP. MOBILE"
-                  />
-                </h2>
-                <p className="paragraph">
-                  <FormattedMessage
-                    id="app.home.serviceElemText2"
-                    defaultMessage="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Illum, quae facere pariatur sunt voluptas dolor aliquid libero
-                    maxime? Aspernatur, eius officia. Ex sit minus saepe impedit
-                    fugit"
-                  />
-                </p>
-                <button
-                  href="#"
-                  className={Style.linkServices + " btn btn-primary"}
-                >
-                  <FormattedMessage
-                    id="app.home.seviceBtn"
-                    defaultMessage="Je découvre"
-                  />
-                </button>
-              </div>
-            </div>
-            <div className={Style.servicesElem}>
-              <img
-                className={Style.imgService + " img-fluid"}
-                src={service4}
-                alt="service"
-                data-aos="fade-right"
-              />
-              <div className={Style.servicesText + " mt-6"}>
-                <h2 className="title-secondary">
-                  <FormattedMessage
-                    id="app.home.serviceElemTitle3"
-                    defaultMessage="PACK SUR MESURE"
-                  />
-                </h2>
-                <p className="paragraph">
-                  <FormattedMessage
-                    id="app.home.serviceElemText3"
-                    defaultMessage="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Illum, quae facere pariatur sunt voluptas dolor aliquid libero
-                    maxime? Aspernatur, eius officia. Ex sit minus saepe impedit
-                    fugit"
-                  />
-                </p>
-                <button
-                  href="#"
-                  className={Style.linkServices + " btn btn-primary"}
-                >
-                  <FormattedMessage
-                    id="app.home.seviceBtn"
-                    defaultMessage="Je découvre"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
-      </section>
+      </div>
     );
   }
 }

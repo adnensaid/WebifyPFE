@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Style from "../projects.module.scss";
-import Window from "./window/Window";
 
 export default class Projet extends Component {
   constructor(props) {

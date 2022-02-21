@@ -1,6 +1,7 @@
 import React from "react";
-import Style from "./buttoncategories.module.scss";
-import "bootstrap/dist/js/bootstrap.bundle.js";
+import { FormattedMessage } from "react-intl";
+import Style from "./Filter.module.scss";
+//import "bootstrap/dist/js/bootstrap.bundle.js";
 
 const ButtonCategories = (props) => {
   // get unique category items
@@ -12,7 +13,7 @@ const ButtonCategories = (props) => {
   //projectCategories.sort();
   return (
     <ul
-      className={Style.navCategories + " nav nav-pills nav-fill"}
+      className={Style.navCategories + " nav nav-pills nav-fill mb-2"}
       id="pills-tab nav-categories"
       role="tablist"
     >
@@ -25,8 +26,8 @@ const ButtonCategories = (props) => {
           <button
             className={
               i === 0
-                ? Style.navLink + ` nav-link active`
-                : Style.navLink + ` nav-link`
+                ? Style.navLink + ` nav-link active btn btn-secondary`
+                : Style.navLink + ` nav-link btn btn-secondary`
             }
             onClick={() => props.setCategory(category)}
             id="pills-contact-tab"
@@ -38,7 +39,10 @@ const ButtonCategories = (props) => {
             aria-controls="pills-contact"
             aria-selected="false"
           >
-            {category}
+            <FormattedMessage
+              id={"app.home.portfolio.navlink" + i}
+              defaultMessage={category}
+            />
           </button>
         </li>
       ))}

@@ -17,6 +17,7 @@ import {
 import "bootstrap/dist/js/bootstrap.bundle.js";
 
 const HeaderWithRouter = withRouter(Header);
+
 class App extends Component {
   constructor(props) {
     super(props);

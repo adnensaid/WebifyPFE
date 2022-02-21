@@ -1,68 +1,17 @@
-/* utils */
-.tab-space {
-  padding-right: 1rem;
+.mb-4 {
+  @include margin-bottom(2.5rem !important);
 }
-.rounded-6 {
-  border-radius: 5rem;
-}
-.py-6 {
-  padding: 5.2rem 0;
+.mb-5 {
+  @include margin-bottom(3rem !important);
 }
 .mb-6 {
-  margin-bottom: 6rem;
-}
-.mb-8 {
-  margin-bottom: 8rem;
-}
-.my-8 {
-  margin: 8rem 0;
-}
-.mt-6 {
-  margin-top: 6.8rem !important;
-}
-.my-5 {
-  margin: 5rem 0;
-}
-.m-1 {
-  margin: 1rem;
-}
-.m-2 {
-  margin: 2rem;
-}
-.p-2 {
-  padding: 2rem;
-}
-.p-1 {
-  padding: 1rem;
-}
-.p-3 {
-  padding: 3rem;
-}
-.d-flex {
-  display: flex;
-}
-.flex-row {
-  flex-direction: row;
-}
-.flex-column {
-  flex-direction: column;
+  @include margin-bottom(3.75rem !important);
 }
 
-.align-items-center {
-  align-items: center;
+.py-5 {
+  @include padding-top(3rem !important);
+  @include padding-bottom(3rem !important);
 }
-.justify-content-center {
-  justify-content: center;
-}
-.flex-fill {
-  flex: 1;
-}
-
-.border-radius-5 {
-  border-radius: 0.5rem;
-}
-
-/*  colors */
-.bgred {
-  background: "red";
+.pt-6 {
+  @include padding-top(3.75rem !important);
 }

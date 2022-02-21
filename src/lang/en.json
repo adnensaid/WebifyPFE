@@ -4,13 +4,42 @@
   "app.header.navlink2": "PORTFOLIO",
   "app.header.navlink3": "TESTIMONIALS",
   "app.header.navlink4": "CONTACT",
+
   "app.titleContact": "CONTACT US",
   "app.titleTestimonials": "TESTIMONIALS",
   "app.titleServices": "SERVICES",
   "app.titlePortfolio": "PORTFOLIO",
 
   "app.banner.title": "CREATION OF CUSTOM WEBSITES AND MOBILE APPLICATIONS",
-  "app.banner.btn": "Discover us!",
+  "app.banner.text": "Lorem ipsum dolor sit amet, consectutur adipiscing elit, sed do eiusmod tempor Ut enim ad Lorem ipsum dolor sit amet,",
+  "app.banner.btn": "Discover us !",
+
+  "app.home.titleExpertises": "OUR EXPERTISE",
+  "app.home.expertiseElem0": "RESPONSIVE DESIGN",
+  "app.home.expertiseElem1": "ADVICE",
+  "app.home.expertiseElem2": "CMS",
+  "app.home.expertiseElem3": "DEVELOPPEMENT",
+  "app.home.expertiseElem4": "WEB DESIGN",
+  "app.home.expertiseBtn": "View all !",
+
+  "app.home.titleServices": "OUR SERVICES AND PACKS",
+  "app.home.serviceElemTitle0": "SHOWCASE PACK",
+  "app.home.serviceElemText0": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
+  "app.home.serviceElemTitle1": "PACK E-COMMERCE",
+  "app.home.serviceElemText1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
+  "app.home.serviceElemTitle2": "PACK APP. MOBILE",
+  "app.home.serviceElemText2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
+  "app.home.serviceElemTitle3": "PACK tailored",
+  "app.home.serviceElemText3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
+  "app.home.seviceBtn": "Discover us !",
+
+  "app.home.titlePortfolio": "OUR PORTFOLIO",
+  "app.home.titlePortfolio2": "OUR LATEST ACHIEVEMENTS",
+  "app.home.portfolio.navlink0": "ALL",
+  "app.home.portfolio.navlink1": "GRAPHIC",
+  "app.home.portfolio.navlink2": "LOGOS",
+  "app.home.portfolio.navlink3": "DESIGN WEB",
+  "app.home.portfolio.navlink4": "MOBILE APPS",
 
   "app.content": "Learn React",
   "app.channel.plug": "Tutorial brought to you by Lokalise {blogName}"

@@ -1,118 +1,29 @@
 @import "./custom.scss";
-@import "./assets/fonts/bevietnam/stylesheet.css";
+@import "./assets/styles/base";
+@import "./assets/styles/utils";
 @import "./assets/styles/classes";
 
 body {
-  font-family: "robotoregular";
   line-height: 1.2;
-  color: $body-color;
+  font-size: $font-size-sm;
 }
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  li {
-    margin: 0;
-  }
-}
-p,
-h1,
-h2 {
-  margin: 0;
-}
-/* utiles */
-.pb-2 {
-  @include padding-bottom(2.9rem !important);
-}
-.mt-6 {
-  @include margin-top(3.75rem !important);
-}
-.mb-6 {
-  @include margin-bottom(3.75rem !important);
-}
-
 .App {
   height: 100vh;
   display: flex;
   flex-direction: column;
   overflow: scroll;
-  .section,
-  section {
-    @include padding-top(2.9rem);
-    @include padding-bottom(2.9rem);
-  }
 }
+
 .page {
-  margin-top: 7.4rem;
-}
-.paragraph {
-  @include font-size(1.5rem);
-  @include margin-bottom(2.2rem !important);
-}
-
-.title {
-  font-family: "be_vietnamsemibold";
-  @include font-size(1.875rem);
-  letter-spacing: 1.2px;
-  margin: 0;
-  &::after {
-    content: "";
-    display: block;
-    width: 60%;
-    height: 3px;
-    border-radius: 30px;
-    background: $primary;
-    @include margin-top(2.2rem !important);
-    @include margin-bottom(2.2rem !important);
-  }
-}
-.title-secondary {
-  @include font-size(2.25rem);
-  @include margin-bottom(2.2rem !important);
-  font-family: "bahnschrift";
-}
-.title-section {
-  font-family: "be_vietnamextrabold";
-  @include font-size(4.5rem);
-  @include padding-bottom(2.9rem);
-  text-align: center;
-  color: $gray-500;
-}
-
-/* header */
-.header-transparent,
-.header-light {
-  background: var(--bs-gray-200);
-  .nav-link {
-    color: var(--bs-dark);
-  }
+  margin-top: 7.37rem;
 }
 
 @media (min-width: 992px) {
+  body {
+    font-size: $font-size-base;
+  }
   .page {
-    margin-top: 9.4rem;
-  }
-  /* header */
-  .header-transparent {
-    background: transparent;
-    .nav-link {
-      color: var(--bs-white);
-    }
-  }
-  .header-light {
-    background: var(--bs-gray-200) !important;
-    .nav-link {
-      background: var(--bs-gray-200);
-      color: var(--bs-dark);
-    }
-    .active {
-      background: $primary !important;
-      color: $body-bg;
-    }
-  }
-  .active {
-    background: $primary;
-    color: $body-bg !important;
+    margin-top: 9.37rem;
   }
 }
 
@@ -138,11 +49,6 @@ body {
   line-height: 1.2;
 }
 
-#pills-contact-tab.active {
-  background: var(--bs-secondary);
-  color: var(--bs-white) !important;
-  border-radius: 1rem;
-}
 .App {
   height: 100vh;
   display: flex;

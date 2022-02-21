@@ -11,7 +11,7 @@
   "app.titlePortfolio": "PORTFOLIO",
 
   "app.banner.title": "CRÉATION DE SITES WEB ET APPLICATION MOBILES SUR MESURE",
-  "app.banner.text": "Lorem ipsum dolor sit amet, consectutur adipiscing elit, sed do eiusmod tempor Ut enim ad Lorem ipsum dolor sit amet,",
+  "app.banner.text": "Généralement, on utilise un texte en faux latin (le texte ne veut rien dire, il a été modifié), le Lorem ipsum ou Lipsum.",
   "app.banner.btn": "Découvrez-nous!",
 
   "app.home.titleExpertises": "NOS EXPERTISES",
@@ -32,6 +32,14 @@
   "app.home.serviceElemTitle3": "PACK SUR MESURE",
   "app.home.serviceElemText3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum, quae facere pariatur sunt voluptas dolor aliquid libero maxime? Aspernatur, eius officia. Ex sit minus saepe impedit fugit",
   "app.home.seviceBtn": "Je découvre",
+
+  "app.home.titlePortfolio": "NOTRE PORTFOLIO",
+  "app.home.titlePortfolio2": "NOS DERNIERS RÉALISATIONS",
+  "app.home.portfolio.navlink0": "TOUS",
+  "app.home.portfolio.navlink1": "GRAPHIQUE",
+  "app.home.portfolio.navlink2": "LOGOS",
+  "app.home.portfolio.navlink3": "DESIGN WEB",
+  "app.home.portfolio.navlink4": "APPLICATIONS MOBILES",
 
   "app.content": "",
   "app.channel.plug": "Tutoriel présenté par Lokalise"

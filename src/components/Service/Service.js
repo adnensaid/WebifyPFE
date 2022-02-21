@@ -6,7 +6,7 @@ const Service = () => {
     <div className="page">
       <div className="container">
         <h2 className="title-section">
-          <FormattedMessage id="app.titleServices" defaultMessage="" />
+          <FormattedMessage id="app.home.titleServices" defaultMessage="" />
         </h2>
       </div>
     </div>

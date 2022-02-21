@@ -1,55 +1,40 @@
-.services {
-  .servicesList {
-    display: flex;
-    flex-direction: column;
-    max-width: 450px;
-    margin: auto;
-    .servicesElem {
-      .servicesText {
-        .linkServices {
-          width: 70%;
-          padding-left: 0 !important;
-          padding-right: 0 !important;
-        }
-      }
-    }
-  }
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: auto;
 }
 @media (min-width: 992px) {
-  .services {
-    .servicesList {
-      max-width: 100%;
-      .servicesElem {
-        display: flex;
-        &:nth-child(2n) {
-          flex-flow: row-reverse;
-          .servicesText {
-            margin-right: 10rem;
-          }
+  .servicesList {
+    max-width: 100%;
+    .servicesElem {
+      display: flex;
+      &:nth-child(2n) {
+        flex-flow: row-reverse;
+        .servicesText {
+          padding-right: 10rem;
         }
-        &:nth-child(2n + 1) {
-          flex-flow: row;
-          .servicesText {
-            margin-left: 10rem;
-          }
+      }
+      &:nth-child(2n + 1) {
+        flex-flow: row;
+        .servicesText {
+          padding-left: 10rem;
         }
       }
     }
   }
 }
 @media (min-width: 1200px) {
-  .services {
-    .servicesList {
-      .servicesElem {
-        &:nth-child(2n) {
-          .servicesText {
-            margin-right: 13rem;
-          }
+  .servicesList {
+    .servicesElem {
+      &:nth-child(2n) {
+        .servicesText {
+          padding-right: 13rem;
         }
-        &:nth-child(2n + 1) {
-          .servicesText {
-            margin-left: 13rem;
-          }
+      }
+      &:nth-child(2n + 1) {
+        .servicesText {
+          padding-left: 13rem;
         }
       }
     }

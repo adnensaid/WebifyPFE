@@ -1,4 +1,4 @@
-import React, { Component, useContext } from "react";
+import React, { Component } from "react";
 import logo from "../../assets/images/logo.png";
 import Style from "./Header.module.scss";
 import { NavLink, Route } from "react-router-dom";
@@ -36,8 +36,10 @@ export default class Header extends Component {
           className={
             this.props.scrollTop === 0 &&
             this.props.location.pathname === "/home"
-              ? Style.navbar + " navbar navbar-expand-lg header-transparent"
-              : Style.navbar + " navbar navbar-expand-lg header-light"
+              ? Style.navbar +
+                " navbar navbar-expand-lg " +
+                Style.headerTransparent
+              : Style.navbar + " navbar navbar-expand-lg " + Style.headerLight
           }
         >
           <div
@@ -47,7 +49,7 @@ export default class Header extends Component {
                 : "container"
             }
           >
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
               <img src={logo} className={Style.logo + " img-fluid"} alt="" />
             </a>
             <button
@@ -98,13 +100,11 @@ export default class Header extends Component {
                     onChange={selectLanguage}
                     style={{
                       background: "transparent",
-                      color: "white",
                       border: "none",
                       fontSize: "1rem",
                       lineHeight: "2.5em",
                       padding: "0 1rem",
                       fontFamily: "be_vietnamextrabold",
-                      color: "var(--primary)",
                     }}
                   >
                     <option value="fr">FR</option>

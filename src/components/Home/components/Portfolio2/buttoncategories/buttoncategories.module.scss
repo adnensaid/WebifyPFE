@@ -1,0 +1,26 @@
+.navCategories {
+  font-family: "be_vietnammedium";
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 0.5rem;
+  .navItem {
+    border: 0.1px solid var(--bs-gray-500);
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    .navLink {
+      color: var(--bs-secondary);
+    }
+  }
+}
+@media (min-width: 992px) {
+  .navCategories {
+    overflow: hidden;
+    background: var(--bs-light);
+    .navItem {
+      margin: 0;
+      border: 0;
+      .navLink {
+        box-shadow: none !important;
+      }
+    }
+  }
+}

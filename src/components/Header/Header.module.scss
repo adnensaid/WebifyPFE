@@ -1,3 +1,11 @@
+.headerTransparent,
+.headerLight {
+  background: var(--bs-gray-200);
+  .nav-link {
+    color: var(--bs-dark);
+  }
+}
+
 .header {
   font-family: "be_vietnamextrabold";
   .logo {
@@ -6,7 +14,7 @@
     align-items: center;
   }
   .navbar {
-    padding: 2.38rem 0;
+    padding: 2.4rem 0;
     .togglerIcon {
       background-image: url(../../assets/images/burger.svg);
       width: 20px;
@@ -16,26 +24,36 @@
       justify-content: center;
     }
     .navbarMenu {
-      margin-top: 2.65rem;
+      padding-top: 2.4rem;
       .navLink {
         letter-spacing: 0.06em;
         text-decoration: none;
         padding: 0.5em 0rem;
         border-top: 0.1rem solid var(--bs-dark);
+        color: var(--bs-dark);
       }
     }
   }
 }
 @media (min-width: 992px) {
+  .headerTransparent {
+    background: transparent;
+    .navLink {
+      color: var(--bs-white) !important;
+    }
+  }
+  .headerLight {
+    background: var(--bs-gray-200);
+  }
   .header {
     .navbar {
-      padding: 3.38rem 0;
+      padding: 3.4rem 0;
       .navbarMenu {
-        margin-top: 0;
+        padding-top: 0;
         .navLink {
           border-top: none;
           border-radius: 5px;
-          padding: 0.6em 0.4em;
+          padding: 0.6em 0.3em;
         }
       }
     }
