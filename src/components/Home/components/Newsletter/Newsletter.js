@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { Form, Formik } from "formik";
+import { Formik } from "formik";
 import * as Yup from "yup";
 import { addNewsletter } from "../../../../store/actions";
 import { FormattedMessage } from "react-intl";
@@ -71,7 +71,7 @@ class Newsletter extends Component {
                           ? Style.inputNewsletter +
                             " form-control rounded-pill shadow-0 w-100 border-danger"
                           : Style.inputNewsletter +
-                            " form-control rounded-pill shadow-0 w-100 border-success"
+                            " form-control rounded-pill shadow-0 w-100 border"
                       }
                     />
                     <button

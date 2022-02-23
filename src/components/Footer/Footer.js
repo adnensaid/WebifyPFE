@@ -59,7 +59,7 @@ export default class Footer extends Component {
               ></ListItemLink>
             </ul>
             <p>
-              ©{" "}
+              ©
               <FormattedMessage
                 id="copyright"
                 defaultMessage="TOUS DROIT RÉSERVÉS"
