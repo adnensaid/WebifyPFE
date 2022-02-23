@@ -1,0 +1,62 @@
+@import "../../../node_modules/bootstrap/scss/mixins";
+.footer {
+  font-family: "be_vietnamextrabold";
+  .footerContent {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    .nav {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      @include margin-bottom(0.5rem);
+      .navItem {
+        @include padding-top(0.1rem);
+        @include padding-bottom(0.1rem);
+        @include padding-left(0.2rem);
+        @include padding-right(0.2rem);
+
+        .navLink {
+          font-weight: 800;
+          color: var(--blue-200);
+          cursor: pointer;
+          padding: 0.2rem;
+        }
+      }
+    }
+    p {
+      color: var(--blue-200);
+      margin: 0;
+    }
+  }
+}
+@media (min-width: 576px) {
+  .footer {
+    .footerContent {
+      justify-content: space-between;
+      .nav {
+        @include margin-bottom(0);
+        .navItem {
+          @include padding-bottom(0);
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    .footerContent {
+      justify-content: space-between;
+      .nav {
+        @include margin-bottom(0);
+        .navItem {
+          @include padding-bottom(0);
+          @include padding-left(0.6rem);
+          @include padding-right(0.6rem);
+        }
+      }
+    }
+  }
+}

@@ -1,12 +1,8 @@
 import { connect } from "react-redux";
-import * as Yup from "yup";
-import { Formik, Field, ErrorMessage } from "formik";
 import { addNewsletter } from "../../../../store/actions";
 import React, { Component } from "react";
 import caretUp from "../../../../assets/images/caret-up.svg";
-
 import Style from "./Newsletter.module.scss";
-
 class Newsletter extends Component {
   constructor(props) {
     super(props);

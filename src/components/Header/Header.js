@@ -13,12 +13,12 @@ export default class Header extends Component {
       <Route
         path={to}
         children={() => (
-          <li className="nav-item">
+          <li className={Style.navItem}>
             <NavLink
               to={to}
               {...rest}
               activeClassName="active"
-              className={Style.navLink + " nav-link"}
+              className={Style.navLink}
             >
               <FormattedMessage
                 id={"app.header.navlink" + index}

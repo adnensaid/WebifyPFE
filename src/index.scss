@@ -3,6 +3,11 @@
 @import "./assets/styles/utils";
 @import "./assets/styles/classes";
 
+:root {
+  --blue-100: #0785cc;
+  --blue-200: #088ccb;
+  --blue: #046ccd;
+}
 body {
   line-height: 1.2;
   font-size: $font-size-sm;
@@ -16,6 +21,7 @@ body {
 
 .page {
   margin-top: 7.37rem;
+  min-height: calc(100vh - 7.37rem);
 }
 
 @media (min-width: 992px) {
@@ -26,205 +32,3 @@ body {
     margin-top: 9.37rem;
   }
 }
-
-/* @import "./assets/styles/reset";
-@import "./assets/styles/base";
-@import "./assets/styles/utils";
-
-@import "./assets/fonts/bevietnam/stylesheet.css";
-@import "./assets/fonts/opensans/stylesheet.css";
-@import "./assets/fonts/roboto/stylesheet.css";
-@import "./assets/fonts/Bahnschrift/stylesheet.css";
-@import "./assets/fonts/myriad/stylesheet.css";
-
-:root {
-  font-size: 62.5%;
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-size: $font-size-sm;
-  font-size: 1.1rem;
-  line-height: 1.2;
-}
-
-.App {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow: scroll;
-  .page {
-    padding-top: 8.76em;
-  }
-  .section,
-  section {
-    padding-top: 2.9rem;
-    padding-bottom: 2.9rem;
-  }
-}
-.title-section {
-  font-size: 4.2rem;
-  margin-bottom: 2.9rem;
-  color: var(--bs-gray-500);
-  text-align: center;
-  font-family: "be_vietnamextrabold";
-}
-.header-transparent,
-.header-light {
-  background: var(--bs-gray-200);
-  .nav-link {
-    color: var(--bs-dark);
-  }
-}
-
-.paragraph {
-  font-family: "robotoregular";
-  color: var(--blue-secondary);
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
-}
-.btn {
-  font-size: 1.4rem;
-}
-h1 {
-  font-size: 1.75rem;
-  letter-spacing: 0.1em;
-}
-h2 {
-  font-size: 2rem;
-  margin: 0;
-  margin-bottom: 2.52rem;
-  font-family: "bahnschrift";
-}
-@media (min-width: 576px) {
-  body {
-    font-size: 1.22rem;
-  }
-  .title-section {
-    font-size: 7.2rem;
-  }
-  .paragraph,
-  .btn {
-    font-size: 1.6rem;
-  }
-  .paragraph {
-    margin-bottom: 2.3rem;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 3.6rem;
-    margin-bottom: 3.5rem;
-  }
-  .title-section {
-    font-size: 4.8rem;
-    margin-bottom: 3.3rem;
-  }
-  .section,
-  section {
-    padding-top: 3.3rem;
-    padding-bottom: 3.3rem;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    font-size: 1.22rem;
-  }
-  .paragraph,
-  .btn {
-    font-size: 1.85rem;
-  }
-  .paragraph {
-    margin-bottom: 2.67rem;
-  }
-  h1 {
-    font-size: 2.3rem;
-  }
-  .title-section {
-    font-size: 5.5rem;
-    margin-bottom: 3.8rem;
-  }
-  .section,
-  section {
-    padding-top: 3.8rem;
-    padding-bottom: 3.84rem;
-  }
-}
-
-@media (min-width: 992px) {
-  body {
-    font-size: 1.4rem;
-  }
-  .paragraph,
-  .btn {
-    font-size: 2rem;
-  }
-  .paragraph {
-    margin-bottom: 3rem;
-  }
-  h1 {
-    font-size: 2.6rem;
-  }
-  .title-section {
-    font-size: 6.3rem;
-    margin-bottom: 4.4rem;
-  }
-  .section,
-  section {
-    padding-top: 4.4rem;
-    padding-bottom: 4.4rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    font-size: 1.6rem;
-  }
-  .paragraph,
-  .btn {
-    font-size: 2.4rem;
-  }
-  .paragraph {
-    margin-bottom: 3.5rem;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  .title-section {
-    font-size: 7.2rem;
-    margin-bottom: 5rem;
-  }
-  .section,
-  section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-  .header-transparent {
-    background: transparent;
-    .nav-link {
-      color: var(--bs-white);
-    }
-  }
-  .header-light {
-    background: var(--bs-gray-200) !important;
-    .nav-link {
-      background: var(--bs-gray-200);
-      color: var(--bs-dark);
-    }
-    .active {
-      background: $primary !important;
-      color: $body-bg;
-    }
-  }
-  .active {
-    background: $primary;
-    color: $body-bg !important;
-  }
-}
-
-@media (min-width: 1400px) {
-}
- */

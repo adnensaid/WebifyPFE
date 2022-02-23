@@ -97,6 +97,10 @@
   background: var(--bs-secondary);
   color: var(--bs-white);
 }
+footer .active {
+  background: none;
+  color: var(--blue) !important;
+}
 @media (min-width: 992px) {
   .active {
     background: $primary;
