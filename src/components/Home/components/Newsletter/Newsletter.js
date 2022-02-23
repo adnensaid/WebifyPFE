@@ -1,21 +1,23 @@
 import { connect } from "react-redux";
+import { Form, Formik } from "formik";
+import * as Yup from "yup";
 import { addNewsletter } from "../../../../store/actions";
+import { FormattedMessage } from "react-intl";
+
 import React, { Component } from "react";
 import caretUp from "../../../../assets/images/caret-up.svg";
 import Style from "./Newsletter.module.scss";
 class Newsletter extends Component {
   constructor(props) {
     super(props);
-    this.input = React.createRef();
   }
-
-  submitEmail = () => {
-    this.props.addNewsletter({
-      email: this.input.current.value,
-    });
-    this.input.current.value = "";
+  userSchema = Yup.object().shape({
+    email: Yup.string().email().required(),
+  });
+  submitEmail = (values, actions) => {
+    this.props.addNewsletter(values);
+    actions.setSubmitting(false);
   };
-
   render() {
     return (
       <section className="pt-5">
@@ -28,27 +30,60 @@ class Newsletter extends Component {
             </div>
             <div className={Style.newsletterContent + " pb-6 pt-3"}>
               <p className={Style.titleSecondary + " mb-1"}>
-                S'INSCRIRE À NOTRE
-              </p>
-              <p className={Style.titreNewsletter + " mb-6"}>NEWSLETTER</p>
-              <form action="#" className={Style.form + " rounded-pill"}>
-                <input
-                  type="email"
-                  ref={this.input}
-                  placeholder="ENTREZ VOTRE MAIL"
-                  className={
-                    Style.inputNewsletter +
-                    " form-control rounded-pill border-0 shadow-0 w-100 border-success"
-                  }
+                <FormattedMessage
+                  id="app.newsletter.title"
+                  defaultMessage="S'INSCRIRE À NOTRE"
                 />
-                <button
-                  onClick={this.submitEmail}
-                  type="submit"
-                  className=" btn btn-sm rounded-pill"
-                >
-                  OK
-                </button>
-              </form>
+              </p>
+              <p className={Style.titreNewsletter + " mb-6"}>
+                <FormattedMessage
+                  id="app.newsletter.titleSecondary"
+                  defaultMessage="NEWSLETTER"
+                />
+              </p>
+              <Formik
+                onSubmit={this.submitEmail}
+                initialValues={{ email: "" }}
+                validationSchema={this.userSchema}
+              >
+                {({
+                  handleChange,
+                  handleBlur,
+                  handleSubmit,
+                  values,
+                  isSubmitting,
+                  errors,
+                  touched,
+                }) => (
+                  <form
+                    onSubmit={handleSubmit}
+                    className={Style.form + " rounded-pill"}
+                  >
+                    <input
+                      name="email"
+                      value={values.email}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      type="email"
+                      placeholder="ENTRER VOTRE EMAIL"
+                      className={
+                        errors.email && touched.email
+                          ? Style.inputNewsletter +
+                            " form-control rounded-pill shadow-0 w-100 border-danger"
+                          : Style.inputNewsletter +
+                            " form-control rounded-pill shadow-0 w-100 border-success"
+                      }
+                    />
+                    <button
+                      type="submit"
+                      className=" btn btn-sm rounded-pill"
+                      disabled={isSubmitting}
+                    >
+                      OK
+                    </button>
+                  </form>
+                )}
+              </Formik>
             </div>
           </div>
         </div>

@@ -12,7 +12,9 @@ const ProjectsList = (props) => {
           {props.projects &&
             props.projects
               .slice(0, 9)
-              .map((p) => <ProjectsItem key={p.title} project={p} />)}
+              .map((p, i) => (
+                <ProjectsItem key={p.title} project={p} index={i} />
+              ))}
         </ul>
       );
     }
@@ -22,7 +24,9 @@ const ProjectsList = (props) => {
           {props.projects &&
             props.projects
               .slice(0, 9)
-              .map((p) => <ProjectsItem key={p.title} project={p} />)}
+              .map((p, i) => (
+                <ProjectsItem key={p.title} project={p} index={i} />
+              ))}
         </ul>
       );
     }
@@ -32,7 +36,9 @@ const ProjectsList = (props) => {
           {props.projects &&
             props.projects
               .slice(0, 9)
-              .map((p) => <ProjectsItem key={p.title} project={p} />)}
+              .map((p, i) => (
+                <ProjectsItem key={p.title} project={p} index={i} />
+              ))}
         </ul>
       );
     }
@@ -42,7 +48,9 @@ const ProjectsList = (props) => {
           {props.projects &&
             props.projects
               .slice(0, 9)
-              .map((p) => <ProjectsItem key={p.title} project={p} />)}
+              .map((p, i) => (
+                <ProjectsItem key={p.title} project={p} index={i} />
+              ))}
         </ul>
       );
     }
@@ -52,7 +60,9 @@ const ProjectsList = (props) => {
           {props.projects &&
             props.projects
               .slice(0, 9)
-              .map((p) => <ProjectsItem key={p.title} project={p} />)}
+              .map((p, i) => (
+                <ProjectsItem key={p.title} project={p} index={i} />
+              ))}
         </ul>
       );
   }

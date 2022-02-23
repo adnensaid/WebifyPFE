@@ -58,7 +58,13 @@ export default class Footer extends Component {
                 index="4"
               ></ListItemLink>
             </ul>
-            <p>© TOUS DROIT RÉSERVÉS</p>
+            <p>
+              ©{" "}
+              <FormattedMessage
+                id="copyright"
+                defaultMessage="TOUS DROIT RÉSERVÉS"
+              />
+            </p>
           </div>
         </div>
       </footer>
