@@ -1,41 +1,30 @@
+@import "../../../../../node_modules/bootstrap/scss/mixins";
 .servicesList {
   display: flex;
   flex-direction: column;
   max-width: 450px;
   margin: auto;
+  .servicesElem {
+    @include margin-bottom(3.75rem !important);
+    &:last-child {
+      @include margin-bottom(0rem !important);
+    }
+  }
 }
 @media (min-width: 992px) {
   .servicesList {
     max-width: 100%;
     .servicesElem {
       display: flex;
+      justify-content: space-between;
+      .servicesText {
+        max-width: 500px;
+      }
       &:nth-child(2n) {
         flex-flow: row-reverse;
-        .servicesText {
-          padding-right: 10rem;
-        }
       }
       &:nth-child(2n + 1) {
         flex-flow: row;
-        .servicesText {
-          padding-left: 10rem;
-        }
-      }
-    }
-  }
-}
-@media (min-width: 1200px) {
-  .servicesList {
-    .servicesElem {
-      &:nth-child(2n) {
-        .servicesText {
-          padding-right: 13rem;
-        }
-      }
-      &:nth-child(2n + 1) {
-        .servicesText {
-          padding-left: 13rem;
-        }
       }
     }
   }

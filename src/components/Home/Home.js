@@ -4,6 +4,8 @@ import {
   Expertise,
   SercicesPacks,
   Portfolio,
+  Testimonials,
+  Newsletter,
 } from "./components/index";
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
       <Expertise />
       <SercicesPacks />
       <Portfolio />
+      <Testimonials />
+      <Newsletter />
     </>
   );
 };

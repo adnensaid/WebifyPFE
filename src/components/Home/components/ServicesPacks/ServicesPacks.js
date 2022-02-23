@@ -5,8 +5,58 @@ import service2 from "../../../../assets/images/ecommerce.png";
 import service3 from "../../../../assets/images/appmobile.png";
 import service4 from "../../../../assets/images/surmesure.png";
 import { FormattedMessage } from "react-intl";
+import { connect } from "react-redux";
 
-export default class ServicesPacks extends Component {
+const ServicesPacks = ({ services }) => {
+  return (
+    <div className="container py-5">
+      <p className="title-section mb-6">
+        <FormattedMessage
+          id="app.home.titleServices"
+          defaultMessage="NOS SERVICES ET PACKS"
+        />
+      </p>
+      <div className={Style.servicesList}>
+        {services.map((s, i) => (
+          <div className={Style.servicesElem} key={i}>
+            <img
+              className={Style.imgService + " img-fluid"}
+              src={s.img}
+              alt="service"
+              data-aos="fade-left"
+            />
+            <div className={Style.servicesText + " pt-6"}>
+              <h2 className="title-secondary mb-4">
+                <FormattedMessage
+                  id={"app.home.serviceElemTitle" + i}
+                  defaultMessage={s.title}
+                ></FormattedMessage>
+              </h2>
+              <p className="paragraph mb-4">
+                <FormattedMessage
+                  id={"app.home.serviceElemText" + i}
+                  defaultMessage={s.text}
+                />
+              </p>
+              <button href={s.link} className=" btn btn-lg">
+                <FormattedMessage
+                  id="app.home.seviceBtn"
+                  defaultMessage="Je découvre"
+                />
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+export default connect((state) => {
+  let services = state.services;
+  return { services };
+})(ServicesPacks);
+
+/* export default class ServicesPacks extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -90,4 +140,4 @@ export default class ServicesPacks extends Component {
       </div>
     );
   }
-}
+} */

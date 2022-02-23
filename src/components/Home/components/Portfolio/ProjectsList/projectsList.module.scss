@@ -1,7 +1,8 @@
+@import "../../../../../../node_modules/bootstrap/scss/mixins";
 .tous {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto 430px;
+  grid-template-rows: auto auto auto auto auto auto auto;
   grid-template-areas:
     "e1 e7 e8"
     "e2 e7 e8"
@@ -11,7 +12,6 @@
     "e5 e7 e9"
     "e6 e6 e9";
   column-gap: 0.2rem;
-  row-gap: 0.1rem;
   .cardHeader {
     display: none;
   }
@@ -58,30 +58,47 @@
   justify-content: center;
   .projectElem {
     margin: 0.5rem;
-    background: green;
   }
 }
+
 .appDesign {
   display: flex;
   flex-direction: column;
+  max-width: 450px;
+  margin: auto;
   .projectElem {
-    margin-bottom: 10rem;
     display: flex;
+    flex-flow: column-reverse;
+    @include margin-bottom(3.75rem !important);
+
     .cardHeader {
       background: none;
-      flex: 1;
+      padding: 0;
     }
     .cardBody {
-      flex: 1;
+      @include margin-bottom(3.75rem !important);
     }
-    &:nth-child(2n) {
-      flex-flow: row-reverse;
-      .cardHeader {
-        margin-left: 4rem;
+    &:last-child {
+      @include margin-bottom(0rem !important);
+    }
+  }
+}
+@media (min-width: 992px) {
+  .appDesign {
+    max-width: 100%;
+    .projectElem {
+      display: flex;
+      justify-content: space-between;
+      .cardHeader,
+      .cardBody {
+        max-width: 450px;
       }
-    }
-    &:nth-child(2n + 1) {
-      flex-flow: row;
+      &:nth-child(2n) {
+        flex-flow: row;
+      }
+      &:nth-child(2n + 1) {
+        flex-flow: row-reverse;
+      }
     }
   }
 }

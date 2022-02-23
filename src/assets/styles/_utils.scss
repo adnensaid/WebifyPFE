@@ -1,3 +1,9 @@
+.mb-1 {
+  @include margin-bottom(0.625rem !important);
+}
+.mb-2 {
+  @include margin-bottom(1.25rem !important);
+}
 .mb-4 {
   @include margin-bottom(2.5rem !important);
 }
@@ -7,10 +13,50 @@
 .mb-6 {
   @include margin-bottom(3.75rem !important);
 }
-
+.mb-8 {
+  @include margin-bottom(5rem !important);
+}
+.mb-65 {
+  @include margin-bottom(4rem !important);
+}
+.pt-10 {
+  @include padding-top(6.25rem !important);
+}
+.mb-10 {
+  @include margin-bottom(6.25rem !important);
+}
+.py-10 {
+  @include padding-top(6.25rem !important);
+  @include padding-bottom(6.25rem !important);
+}
+.py-3 {
+  @include padding-top(1.875rem !important);
+  @include padding-bottom(1.875rem !important);
+}
+.pt-3 {
+  @include padding-top(1.875rem !important);
+}
+.py-2 {
+  @include padding-top(1.25rem !important);
+  @include padding-bottom(1.25rem !important);
+}
 .py-5 {
   @include padding-top(3rem !important);
   @include padding-bottom(3rem !important);
+}
+.pt-5 {
+  @include padding-top(3rem !important);
+}
+.py-6 {
+  @include padding-top(3.75rem !important);
+  @include padding-bottom(3.75rem !important);
+}
+.pb-6 {
+  @include padding-bottom(3.75rem !important);
+}
+.my-5 {
+  @include margin-top(3rem !important);
+  @include margin-bottom(3rem !important);
 }
 .pt-6 {
   @include padding-top(3.75rem !important);

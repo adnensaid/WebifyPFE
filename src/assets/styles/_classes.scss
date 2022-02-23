@@ -7,7 +7,11 @@
   margin: 0 auto;
   padding: 0 7.5px;
 }
-
+.container-xs {
+  max-width: 680px !important;
+  margin: 0 auto;
+  padding: 0 7.5px;
+}
 @media (min-width: 1400px) {
   .container-fluid {
     @include padding-left(2.5rem);
@@ -32,6 +36,9 @@
 .paragraph {
   @include font-size(1.5rem);
 }
+.paragraph-xs {
+  @include font-size(0.75rem);
+}
 
 .btn {
   @include font-size(1.5rem);
@@ -51,6 +58,14 @@
   &.btn-primary {
     @include padding-left(3rem !important);
     @include padding-right(3rem !important);
+    &:hover,
+    &:focus {
+      color: var(--bs-white) !important;
+    }
+  }
+  &.btn-sm {
+    @include padding-left(1.5rem !important);
+    @include padding-right(1.5rem !important);
     &:hover,
     &:focus {
       color: var(--bs-white) !important;

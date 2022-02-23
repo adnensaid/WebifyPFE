@@ -7,7 +7,7 @@ const ProjectsItem = ({ project }) => {
         <p className="title-secondary mb-4">{project.title}</p>
         <p className="paragraph">{project.description}</p>
       </div>
-      <div className={Style.cardBody + " card-body p-0"}>
+      <div className={Style.cardBody + " card-body p-0 "}>
         <img src={project.img} alt={project.title} />
       </div>
     </li>

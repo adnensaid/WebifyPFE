@@ -1,4 +1,6 @@
 export const ADD_PROJECT = "add project";
+export const ADD_NEWSLETTER = "add newsletter";
+
 export const SET_FILTER = "set filter";
 export const VisibilityFilters = {
   SHOW_ALL: "SHOW_ALL",
@@ -14,6 +16,14 @@ export const addProject = (project) => {
     project,
   };
 };
+
+export const addNewsletter = (email) => {
+  return {
+    type: ADD_NEWSLETTER,
+    email,
+  };
+};
+
 export const setFilter = (filter) => {
   return {
     type: SET_FILTER,
