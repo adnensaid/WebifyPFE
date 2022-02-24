@@ -6,6 +6,7 @@ import {
   Portfolio,
   Testimonial,
   Contact,
+  Footer,
 } from "./components";
 import {
   BrowserRouter as Router,
@@ -17,6 +18,7 @@ import {
 import "bootstrap/dist/js/bootstrap.bundle.js";
 
 const HeaderWithRouter = withRouter(Header);
+const FooterWithRouter = withRouter(Footer);
 class App extends Component {
   constructor(props) {
     super(props);
@@ -43,6 +45,7 @@ class App extends Component {
             <Route path="/contact" component={Contact} />
             <Redirect to="/home" />
           </Switch>
+          <FooterWithRouter />
         </div>
       </Router>
     );

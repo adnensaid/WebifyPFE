@@ -1,0 +1,63 @@
+@import "../../../../../node_modules/bootstrap/scss/mixins";
+
+.newsletter {
+  background: url(../../../../assets/images/bg.png) no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  position: relative;
+  line-height: 1;
+  .toggleBtn {
+    background: var(--bs-primary);
+    border: none;
+    transform: translateY(-50%);
+    border-radius: 100%;
+    @include padding-top(0.75rem);
+    @include padding-bottom(0.75rem);
+    @include padding-left(0.75rem);
+    @include padding-right(0.75rem);
+    .toggleIcon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .newsletterContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .titleSecondary {
+      font-family: "bahnschrift";
+      color: var(--bs-white) !important;
+      text-align: center;
+      @include font-size(1.8rem);
+    }
+    .titreNewsletter {
+      color: var(--bs-white);
+      font-weight: 900;
+      @include font-size(3.625rem);
+      letter-spacing: 0.5px;
+      text-align: center;
+      font-family: "be_vietnamextrabold";
+    }
+    .form {
+      display: flex;
+      background: var(--bs-primary);
+      width: 100%;
+      .inputNewsletter {
+        @include font-size(0.875rem);
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .newsletter {
+    .toggleBtn {
+      .toggleIcon {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}

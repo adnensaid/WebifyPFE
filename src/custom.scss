@@ -1,15 +1,23 @@
+@import "./assets/fonts/roboto/stylesheet.css";
+@import "./assets/fonts/bevietnam/stylesheet.css";
+@import "./assets/fonts/opensans/stylesheet.css";
+@import "./assets/fonts/Bahnschrift/stylesheet.css";
+@import "./assets/fonts/myriad/stylesheet.css";
+
 $primary: #f9aa00;
 $secondary: #046ccd;
-$info:#0889cb;
-$body-bg: #FFF;
-$body-color: #000;
-/* font size */
-$font-size-base:              1rem;
-$font-size-sm:                $font-size-base * .875;
-$font-size-lg:                $font-size-base * 1.25;
+$info: #0889cb;
+$body-bg: #fff;
+$body-color: #0b2750;
+$blue-100: #0785cc;
+$gray-100: #f3f3f4;
+$gray-200: #f6f6f6;
+$blue-200: #088ccb;
+$gray-500: #dbdada;
 
-@import "/node_modules/bootstrap/scss/bootstrap.scss";
-
-.fs-1{
-  font-size: 10rem;
-}
+$font-family-base: "robotoregular";
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.25;
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/_mixins.scss";

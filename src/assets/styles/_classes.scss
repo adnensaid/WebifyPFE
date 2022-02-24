@@ -2,70 +2,108 @@
   max-width: 1200px !important;
   margin: 0 auto;
 }
-.container-fluid {
-  max-width: 1400px !important;
+.container-small {
+  max-width: 1000px !important;
   margin: 0 auto;
+  padding: 0 7.5px;
 }
+.container-xs {
+  max-width: 680px !important;
+  margin: 0 auto;
+  padding: 0 7.5px;
+}
+@media (min-width: 1400px) {
+  .container-fluid {
+    @include padding-left(2.5rem);
+  }
+}
+/* title */
+.title {
+  font-family: "be_vietnamsemibold";
+  @include font-size(1.875rem);
+  letter-spacing: 1.2px;
+}
+.title-secondary {
+  @include font-size(2.25rem);
+  font-family: "bahnschrift";
+}
+.title-section {
+  font-family: "be_vietnamextrabold";
+  @include font-size(4.5rem);
+  text-align: center;
+  color: $gray-500;
+}
+.paragraph {
+  @include font-size(1.5rem);
+}
+.paragraph-xs {
+  @include font-size(0.75rem);
+}
+
 .btn {
+  @include font-size(1.5rem);
   font-family: "be_vietnammedium";
-  color: var(--light);
+  color: var(--bs-white);
   cursor: pointer;
   display: inline-block;
-  padding: 0.35em 1.6em;
-  border: 0.1em solid var(--primary);
-  margin: 0 0.3em 0.3em 0;
   border-radius: 0.4em;
   box-sizing: border-box;
   text-decoration: none;
   text-align: center;
   transition: all 0.2s;
-  &:hover {
-    color: var(--light) !important;
+  line-height: 1em;
+  border: none;
+  @include padding-top(0.8rem !important);
+  @include padding-bottom(0.8rem !important);
+  &.btn-primary {
+    @include padding-left(3rem !important);
+    @include padding-right(3rem !important);
+    &:hover,
+    &:focus {
+      color: var(--bs-white) !important;
+    }
+  }
+  &.btn-sm {
+    @include padding-left(1.5rem !important);
+    @include padding-right(1.5rem !important);
+    &:hover,
+    &:focus {
+      color: var(--bs-white) !important;
+    }
+  }
+  &.btn-secondary {
+    color: var(--bs-secondary);
+    background: var(--bs-light);
+  }
+  &.btn-lg {
+    background: $primary;
+    @include padding-left(5.5rem !important);
+    @include padding-right(5.5rem !important);
+    &:hover,
+    &:focus {
+      color: var(--bs-white) !important;
+    }
   }
 }
 
-.paragraph {
-  font-family: "robotoregular";
-  color: var(--blue-secondary);
-}
-.title {
-  font-family: "be_vietnamsemibold";
-  color: var(--text-primary);
-}
 .underline {
-  width: 20%;
-  height: 0.3rem;
-  background: var(--primary);
+  border-radius: 30px;
+  width: 60%;
+  height: 3px;
+  background: $primary;
 }
-
-.title-section {
-  color: var(--gray-title);
-  font-size: 4.5em;
-  line-height: 1em;
-  text-align: center;
-  font-family: "be_vietnamextrabold";
+/* navbar portfolio */
+#pills-contact-tab.active {
+  background: var(--bs-secondary);
+  color: var(--bs-white);
 }
-.titre-secondary {
-  font-size: 3.6rem;
-  line-height: 3.6rem;
-  font-family: "bahnschrift";
-  color: var(--blue-secondary);
-  margin: 0;
-  margin-bottom: 4rem;
+footer .active {
+  background: none;
+  color: var(--blue) !important;
 }
-
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .active {
     background: $primary;
     color: $body-bg !important;
-  }
-  .header-light {
-    color: var(--light);
-  }
-  .header-dark {
-    color: var(--text);
-  }
-  .title-section {
-    text-align: left;
   }
 }

@@ -3,10 +3,15 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import "./index.scss";
 import Wrapper from "./components/Wrapper";
-
+import { Provider } from "react-redux";
+import store from "./store";
 ReactDOM.render(
-  <Wrapper>
-    <App />
-  </Wrapper>,
+  <React.StrictMode>
+    <Provider store={store}>
+      <Wrapper>
+        <App />
+      </Wrapper>
+    </Provider>
+  </React.StrictMode>,
   document.getElementById("root")
 );

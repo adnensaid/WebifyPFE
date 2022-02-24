@@ -6,7 +6,6 @@ import English from "../lang/en.json";
 
 export const Context = React.createContext();
 const local = navigator.language;
-console.log(local);
 let lang;
 if (local === "en-US") {
   lang = English;

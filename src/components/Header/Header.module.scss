@@ -1,52 +1,72 @@
-.header {
-  font-size: 16px;
-  line-height: 2.62em;
-  padding: 3.34em 0;
-  margin-bottom: 1em;
-  .logo {
-    max-width: 50vw;
-  }
-  .navbarMenu {
-    margin-top: 3.5em; //(line-height + padding)
-    .navlink {
-      display: block;
-      font-family: "be_vietnamextrabold";
-      letter-spacing: 0.15em;
-      padding: 0rem 0.89em;
-      text-decoration: none;
-      border-top: 0.1rem solid var(--text);
-      color: var(--dark);
-    }
+.headerTransparent,
+.headerLight {
+  background: var(--bs-gray-200);
+  .nav-link {
+    color: var(--bs-dark);
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .header {
-    margin-bottom: 3.34em;
+.header {
+  font-family: "be_vietnamextrabold";
+  .logo {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .navbar {
+    padding: 2.4rem 0;
+    .togglerIcon {
+      background-image: url(../../assets/images/burger.svg);
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .navbarMenu {
-      margin-top: 0 !important;
-      .navlink {
-        border-radius: 0.4em;
-        display: inline-block;
-        border-top: none !important;
+      padding-top: 2.4rem;
+      .navLink {
+        letter-spacing: 0.06em;
+        text-decoration: none;
+        padding: 0.5em 0rem;
+        border-top: 0.1rem solid var(--bs-dark);
+        color: var(--bs-dark);
       }
     }
   }
 }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-}
-
-// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .headerTransparent {
+    background: transparent;
+    .navLink {
+      color: var(--bs-white) !important;
+    }
+  }
+  .headerLight {
+    background: var(--bs-gray-200);
+  }
+  .header {
+    .navbar {
+      padding: 3.4rem 0;
+      .navbarMenu {
+        padding-top: 0;
+        .navLink {
+          border-top: none;
+          border-radius: 5px;
+          padding: 0.6em 0.3em;
+        }
+      }
+    }
+  }
 }
-
-// X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
+  .header {
+    .navbar {
+      .navbarMenu {
+        .navLink {
+          padding: 0.75em 1.2em;
+        }
+      }
+    }
+  }
 }
